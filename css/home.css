@@ -1,0 +1,121 @@
+/* style content of home page */
+/* all devices*/
+#content {
+    margin-top: 50px;
+    font-family: "Raleway";
+}
+/* style about div*/
+#about {
+    width: 100%;
+}
+#about-text h3 {
+    font-family: "Tangerine";
+    color: #e15f41;
+    font-size: 3em;
+}
+#about-text { 
+    padding: 20px;
+    font-size: 2.8vw;
+    height: 260px;
+    color: #303952;
+    width: 90vw;
+}
+
+/***************** style product preview *******************/
+div#products {
+    width: 100%;
+    height: 700px;
+    background: url(../images/border1.jpg);
+    background-size: 100vw 66vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* for mobile */
+
+#for_desktop {
+    display: none;
+}
+#for_mobile {
+    width: 80vw;
+    height: auto;
+}
+
+div.item img {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    max-height: 426px;
+}
+
+div.item::after {
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0,0, .4);
+    z-index: 1;
+    transition: .3s;
+    overflow: hidden;
+}
+div.item:hover::after {
+    bottom: 0;
+} 
+#product_heading {
+    position: relative;
+    top: 50px;
+    height: 50px;
+    width: 90vw;
+    text-align: center;
+    font-size: 4em;
+    font-weight: normal;
+    color: red;
+    margin-top: 20vw;
+}
+
+/* for desktop */
+@media only screen and (min-width: 992px) {
+    #for_desktop {
+        display: block;
+    }
+    #for_mobile{
+        display: none;
+    }
+
+    #about-text {
+        font-size: 1.6em;
+    }
+    #product_heading {
+        top: 50px;
+        margin-top: 50px;
+    }
+    div#products {
+        background-image: url('../images/texture8.jpg');
+        background-size: cover;
+        height: 350px;
+        margin-top: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #products figure img {
+        width: 100%;
+    }
+
+    #products figure figcaption {
+        text-align: center;
+        color: #fff;
+        font-size: 1.3em;
+    }
+
+}
+
+
