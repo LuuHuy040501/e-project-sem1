@@ -86,7 +86,7 @@ div.carousel-caption {
 }
 
 
-/* slide show for mobile using swipper library */
+/* slide show products for mobile using swipper library */
 
 #for_desktop {
     display: none;
@@ -130,7 +130,7 @@ div.image-wrapper>img {
 #gallery {
     margin-top: 0px;
     width: 100%;
-    height: 100vh;
+    height: auto;
     font-family: "Raleway", sans-serif;
 }
 #gallery #gallery-text {
@@ -216,7 +216,124 @@ div#gallery-mobile {
     text-decoration: none;
     color: #fff;
 }
-/* for desktop */
+/******************** style the feedback section ************/
+#feedback {
+    font-family: "Raleway", sans-serif;
+    margin-top: 50px;
+    overflow: hidden;
+    height: auto;
+}
+
+.feedback-heading {
+    width: 100%;
+    text-align: center;
+    font-family: "Tangerine", sans-serif;
+}
+
+.feedback-heading h3 {
+    font-size: 56px;
+    color: green;
+}
+.feedback-container{
+    height: auto;
+    overflow: hidden;
+}
+.feedback-container .feedback-box  {
+    position: relative;
+    width: 300px;
+    height: 370px;
+    padding: 40px;
+    box-shadow: 0 6px 15px rgba(0,0,0,.1) ;
+    overflow: hidden;
+    transition: .5s;
+    margin: 30px auto; /* center vertically cards*/
+}
+
+.feedback-container .feedback-box .icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+    transition: .5s;
+}
+.feedback-container .feedback-box .icon img.ava {
+    width: 80px;
+    height: 80px;
+}
+/* hover feedback card effect */
+.feedback-box:nth-child(1) .icon {
+    box-shadow: 0 0 0 0 #e91e63;
+    background: #e91e63;
+}
+
+.feedback-box:nth-child(1):hover .icon {
+    box-shadow: 0 0 0 400px #e91e63;
+}
+
+.feedback-box:nth-child(2) .icon {
+    box-shadow: 0 0 0 0 lightgreen;
+    background: lightgreen;
+}
+
+.feedback-box:nth-child(2):hover .icon {
+    box-shadow: 0 0 0 400px lightgreen;
+}
+
+.feedback-box:nth-child(3) .icon {
+    background: #e056fd;
+    box-shadow: 0 0 0 0 #e056fd;
+}
+
+.feedback-box:nth-child(3):hover .icon {
+    box-shadow: 0 0 0 400px #e056fd;
+}
+.feedback-box:nth-child(4) .icon {
+    background: #e056fd;
+    box-shadow: 0 0 0 0 #e056fd;
+}
+
+.feedback-box:nth-child(4):hover .icon {
+    box-shadow: 0 0 0 400px #e056fd;
+}
+.feedback-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .2);
+    z-index: 1;
+}
+/* style feedback text */
+.feedback-box .feedback-text {
+    position: relative;
+    z-index: 10;
+    transition: .5s;
+    font-size: 1.1em;
+}
+.feedback-box:hover .feedback-text {
+    color: #fff;
+}
+.feedback-text h3 {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    padding: 0;
+}
+.feedback-text p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+/**************************************** for desktop ***********************************/
 @media only screen and (min-width: 992px) {
     #for_desktop {
         display: block;
@@ -300,6 +417,24 @@ div#gallery-mobile {
     font-size: 56px;
     color: green;
     }
+    /*** feedback section ***/
+    .feedback-container {
+        /* add baclground image */
+        /* background: url(../images/texture6.jpg); */
+        background-size: 100% 100%;
+        /* center horizontal cards */
+        width: 100vw;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .feedback-container .feedback-box  {
+        width: 20vw;
+        margin: 0 2vw;
+    }
+    
 }
 
 
