@@ -333,6 +333,90 @@ div#gallery-mobile {
     padding: 0;
     margin: 0;
 }
+/* style feedback button */
+div#feedback-button {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+.feedback-btn {
+    display: inline-block;
+    padding: 20px 40px;
+    color: #fff;
+    background-color: green;
+    box-shadow: 0px 5px rgba(0, 0, 0, .8);
+    transition: .5s;
+    font-size: 1.2em;
+}
+.feedback-btn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+/*** style certificate section ***/
+#certificate {
+    width: 100%;
+    margin-top: 50px;
+}
+#certificate .certificate-text {
+    text-align: left;
+    padding-left: 30px;
+    font-size: 1.4em;
+}
+#certificate .certificate-text h3, h4 {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    color: green;
+
+}
+#certificate .certificate-text h3 {
+    font-family: "Tangerine";
+    font-size: 2em;
+    color: red;
+}
+
+
+.certificate-container{
+    width: 100%;
+    text-align: center;
+}
+.certificate-container img {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 20px 40px;
+}
+
+div.number {
+    display: flex;
+    margin-top: 100px;
+    height: 700px;
+}
+
+.number .col {
+    height: 150px;
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+    font-size: 2em;
+}
+.number .col .num {
+    padding-top: 25%;
+    font-size: 5vw;
+    color: green;
+    margin-bottom: 20px;
+    height: 22vw;
+    background-image: url(../images/laurel\ wreath2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.number .col p {
+    color: green;
+    font-size: 4vw;
+    margin-top: 0;
+}
 /**************************************** for desktop ***********************************/
 @media only screen and (min-width: 992px) {
     #for_desktop {
@@ -434,7 +518,39 @@ div#gallery-mobile {
         width: 20vw;
         margin: 0 2vw;
     }
-    
+    /* style feedback button */
+    .feedback-btn:hover {
+        color: #111;
+        text-decoration: none;
+        background-color: yellow;
+    }
+    /** style certicate dection ***/
+    .number .col {
+        height: 150px;
+        flex: 1;
+        margin: 10px;
+        text-align: center;
+        font-size: 2em;
+    }
+    .number .col .num {
+        padding-top: 75px;
+        font-size: 1.4em;
+        font-weight: 700;
+        color: green;
+        margin-bottom: 20px;
+        height: 200px;
+        background-image: url(../images/laurel\ wreath2.jpg);
+        background-size: 100% 100%;
+        letter-spacing: 1px;
+
+    }
+
+    .number .col p {
+        color: green;
+        font-size: 1.2em;
+        margin-top: 0;
+        font-weight: normal;
+    }
 }
 
 

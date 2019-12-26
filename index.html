@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- jquery cdn-->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- way point plugin-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <!-- count up plugin (fixed bug decrease counting number when scroll to counting section agqain)-->
+    <script src="vendor/counter up/jquery.counterup.js"></script>
     <!-- import fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -402,8 +406,46 @@
                         </div>
                     </div><!-- end box 4-->
                 </div>
+                <div id="feedback-button">
+                    <a href="#" class="feedback-btn">Give us Feedback</a>
+                </div>
+            </div> <!-- end feedback section-->
+            <div id="certificate">
+                <div class="certificate-text col-md-6">
+                    <h3>quality products</h3>
+                    <h4>Our products is certificated</h4>
+                    <span class="separator"></span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, assumenda vitae? Commodi voluptatum consectetur sint distinctio saepe iure cumque, repudiandae, numquam dicta quae ratione, fuga at blanditiis aliquam ipsam. Enim?</p>
+                    <span class="separator"></span>
+                    <div class="certificate-container">
+                        <img src="images/certificate1.png" alt="">
+                        <img src="images/certificate2.png" alt="">
+                        <img src="images/certificate3.gif" alt="">
+                        <img src="images/certificate4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="number col-md-6" id="count-up">
+                    <div class="col">
+                        <div class="num ">
+                            675
+                        </div>
+                        <p>Happy customer</p>
+                    </div>
+                    <div class="col">
+                        <div class="num ">
+                            1112
+                        </div>
+                        <p>Seeds planted</p>
+                    </div>
+
+                    <div class="col">
+                        <div class="num ">
+                            20
+                        </div>
+                        <p>Years of farming</p>
+                    </div>
+                </div>
             </div>
-            
         </div><!--end content div-->
 
         <div id="foot">
@@ -413,6 +455,7 @@
     <!-- swiper.js-->
     <script src="vendor/swiper/swiper.min.js"></script>
     <script>
+        // swiper for product section
         var swiperProduct = new Swiper('.swiper-container', {
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -420,6 +463,7 @@
             },
         });
     </script>
+    <!-- swiper for gallery section-->
     <script>
         var swiperGallery = new Swiper('.swiper-gallery', {
             effect: 'coverflow',
@@ -438,6 +482,9 @@
             },
         });
     </script>
-
+    <script>
+        $(".num").counterUp({delay: 10, time: 2000});
+    </script>
+    <!-- <script src="js/countingUpAnimation.js"></script> -->
 </body>
 </html>
