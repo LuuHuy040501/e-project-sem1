@@ -14,6 +14,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- font awesome-->
     <link rel="stylesheet" href="vendor/fontawesome/css/all.css">
+    <!-- swiper-->
+    <link rel="stylesheet" href="vendor/swiper/swiper.min.css">
     <!--customer stylesheet-->
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/home.css">
@@ -114,68 +116,56 @@
                             <a href="#" class="product-btn">lorem</a>
                         </figcaption>
                     </figure>
-                  </div>
-                <!-- slide show for mobile devices-->
-              
-                <div id="for_mobile" class="carousel slide" data-ride="carousel">
-        
-                    <!-- Indicators -->
-                    <!-- <ol class="carousel-indicators">
-                      <li data-target="#for_mobile" data-slide-to="0" class="active"></li>
-                      <li data-target="#for_mobile" data-slide-to="1"></li>
-                      <li data-target="#for_mobile" data-slide-to="2"></li>
-                      <li data-target="#for_mobile" data-slide-to="3"></li>
-                    </ol> -->
-                  
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" >
-                        <div class="item active">
-                            <a href="#"><img src="images/product1.jpg" alt=""></a>
-                            <div class="carousel-caption">
+                </div>
+                <!-- slide show for mobile devices using swipeer library-->
+                  <!-- Swiper -->
+                <div class="swiper-container" id="for_mobile">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="image-wrapper">
+                                <img src="images/product1.jpg" alt="">
+                            </div>
+                            <div class="product-details">
                                 <h3>Lorem, ipsum.</h3>
                                 <p>Lorem ipsum dolor sit amet.</p>
                                 <a href="#" class="product-btn">lorem</a>
                             </div>
                         </div>
-                  
-                        <div class="item">
-                            <a href="#"><img src="images/product2.jpg" alt=""></a>
-                            <div class="carousel-caption">
-                                <h3>Lorem</h3>
+                        <div class="swiper-slide">
+                            <div class="image-wrapper">
+                                <img src="images/product2.jpg" alt="">
+                            </div>
+                            <div class="product-details">
+                                <h3>Lorem, ipsum.</h3>
                                 <p>Lorem ipsum dolor sit amet.</p>
                                 <a href="#" class="product-btn">lorem</a>
                             </div>
                         </div>
-                  
-                        <div class="item">
-                            <a href="#"><img src="images/product3.jpg" alt=""></a>
-                            <div class="carousel-caption">
-                                <h3>Lorem</h3>
+                        <div class="swiper-slide">
+                            <div class="image-wrapper">
+                                <img src="images/product3.jpg" alt="">
+                            </div>
+                            <div class="product-details">
+                                <h3>Lorem, ipsum.</h3>
                                 <p>Lorem ipsum dolor sit amet.</p>
                                 <a href="#" class="product-btn">lorem</a>
                             </div>
                         </div>
-
-                        <div class="item">
-                            <a href ="#"><img src="images/product4.jpg" alt=""></a>
-                            <div class="carousel-caption">
-                                <h3>Lorem</h3>
+                        <div class="swiper-slide">
+                            <div class="image-wrapper">
+                                <img src="images/product4.jpg" alt="">
+                            </div>
+                            <div class="product-details">
+                                <h3>Lorem, ipsum.</h3>
                                 <p>Lorem ipsum dolor sit amet.</p>
                                 <a href="#" class="product-btn">lorem</a>
                             </div>
                         </div>
                     </div>
-                  
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#for_mobile" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#for_mobile" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div> <!--end carousel-->
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
             </div><!-- end product section-->
             
             <div id="gallery" class ="container-fluid">
@@ -270,14 +260,25 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div><!-- end gallery section-->
+
+            
         </div><!--end content div-->
 
         <div id="foot">
 
         </div><!--end foot div-->
     </div><!-- end page div-->
-
+    <!-- swiper.js-->
+    <script src="vendor/swiper/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                 prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 
 </body>
 </html>
