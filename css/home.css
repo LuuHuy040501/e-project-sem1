@@ -15,13 +15,25 @@
 }
 #about-text { 
     padding: 20px;
-    font-size: 2.8vw;
+    font-size: 16px;
     height: 260px;
     color: #303952;
     width: 90vw;
 }
 
 /***************** style product section *******************/
+#product_heading {
+    position: relative;
+    top: 20px;
+    height: 50px;
+    width: 90vw;
+    text-align: center;
+    font-size: 4em;
+    font-weight: normal;
+    color: red;
+    margin-top: 200px;
+}
+
 div#products {
     font-family: "Raleway";
     width: 100%;
@@ -67,19 +79,19 @@ div.carousel-caption {
     z-index: -1;
     transition: .3s;
 }
-.product-btn:hover::after {
-    bottom: 0;
-}
+
 .product-btn:hover {
-    color: black;
     text-decoration: none;
+    color: white;
 }
+
 
 /* slide show for mobile using swipper library */
 
 #for_desktop {
     display: none;
 }
+
 #for_mobile {
     width: 80vw;
     height: auto;
@@ -111,22 +123,12 @@ div.image-wrapper>img {
     height: auto;
     max-height: 426px;
 }
-/* hover image effects */
 
-#product_heading {
-    position: relative;
-    top: 50px;
-    height: 50px;
-    width: 90vw;
-    text-align: center;
-    font-size: 4em;
-    font-weight: normal;
-    color: red;
-    margin-top: 20vw;
-}
+
+
 /********* style the gallery section **********/
 #gallery {
-    margin-top: 50px;
+    margin-top: 0px;
     width: 100%;
     height: 100vh;
     font-family: "Raleway", sans-serif;
@@ -135,11 +137,84 @@ div.image-wrapper>img {
     width: 100%;
     text-align: center;
     font-family: "Tangerine", sans-serif;
+    margin-top: 0;
+    height: 100px;
+    position: relative;
+    bottom: 100px;
 }
 
 #gallery #gallery-text h3 {
-    font-size: 5em;
+    font-size: 10vw;
     color: green;
+}
+
+div.gallery-desktop {
+    display: none;
+}
+div#gallery-mobile {
+    display: block;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/texture12.jpg);
+    background-size: cover;
+}
+
+
+/****** swiper slide show for galllery *****/
+.swiper-gallery {
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+   overflow: hidden;
+}
+.swiper-slide#gallery-slide {
+    width: 100%;
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+}
+.swiper-slide#gallery-slide .gallery-imgBox {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper-slide#gallery-slide .gallery-imgBox>img {
+    width: 100%;
+    max-width: 640px;
+    height: 100%;
+    min-height: 426px;
+}
+.swiper-slide#gallery-slide .img-details {
+    position: absolute;
+    bottom: -0px;
+    text-align: left;
+    padding-left: 20px;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+.swiper-slide#gallery-slide .img-details h2 {
+    font-size: 1.8em;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-btn {
+    display: inline-block;
+    padding: 1vw 2vw;
+    background-color: green;
+    color: #fff;
+    margin-top: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .8);
+}
+.gallery-btn:hover {
+    text-decoration: none;
+    color: #fff;
 }
 /* for desktop */
 @media only screen and (min-width: 992px) {
@@ -162,6 +237,14 @@ div.image-wrapper>img {
         background-size: cover;
         height: 500px;
         margin-top: 150px;
+    }
+
+    .product-btn:hover::after {
+        bottom: 0;
+    }
+    .product-btn:hover {
+        color: black;
+        text-decoration: none;
     }
     div.wrapper {
         display: flex;
@@ -193,6 +276,29 @@ div.image-wrapper>img {
     }
     .product-btn {
         padding: 10px 35px;
+    }
+    /* gallery section */
+    div.gallery-desktop {
+        display: block;
+        background: url(../images/texture7.jpg);
+        background-size: cover;
+    }
+    div#gallery-mobile {
+        display: none;
+    }
+    #gallery #gallery-text {
+        width: 100%;
+        text-align: center;
+        font-family: "Tangerine", sans-serif;
+        margin-bottom: 70px;
+        height: 100px;
+        position: relative;
+        bottom: 0px;
+    }
+    
+    #gallery #gallery-text h3 {
+    font-size: 56px;
+    color: green;
     }
 }
 
