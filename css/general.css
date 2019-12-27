@@ -30,36 +30,85 @@
     transition: .5s;
     box-sizing: border-box;
 }
+/* class for hidden navbar when sroll down */
 #nav.hiden {
     transform: translateY(-550%);
 }
-input#toggle {
-    display: none;
-}
-label[for="toggle"] {
+
+/* style hamburger buttton */
+button.hamburger {
     display: block;
     cursor: pointer;
     user-select: none;
-    width: 30px;
-    float: left;
-    transition: .5s;
-    color: white;
-    font-size: 26px;
-    margin-left: 20px;
-    position: relative;
+    position: absolute;
+    /* center vertically */
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    width: 50px;
+    height: 50px;
+    background: none;
+    box-sizing: border-box;
+    z-index: 11;
+    border: none;
+    outline: none;
+}
+/* create hamburger  button with span tag */
+button.hamburger span {
+    display: block;
+    width: 35px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    top: 24px;
+    transition: .3s;
+    z-index: 11;
+}
+/* top of hamburger */
+button.hamburger span::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    transition: .3s;
+    z-index: 11;
+}
+/* bottom of hamburger */
+button.hamburger span::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    transition: .3s;
     z-index: 11;
 }
 
-label[for = "toggle"]:hover {
-    color: yellow;
-    font-size: 30px;
-} 
-
+/* add class for toggleClass jquery method */
+/* change humberger button to close button when clicked */
+button.hamburger.toggle span {
+    background-color: transparent;
+}
+button.hamburger.toggle span::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+button.hamburger.toggle span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+/* style menu for mobile */
 #menu {
     position: relative;
     width: 100%;
     text-align: center;
     background: rgba(0, 0, 0, .7);
+    /* hide menu */
     transform: translateY(-200%);
     transition: transform .3s linear;
     z-index: 10;
@@ -81,16 +130,15 @@ label[for = "toggle"]:hover {
     letter-spacing: 0.2em;
 }
 
-#menu a:hover {
-    color: #b2bec3;
-}
-#menu a.on {
+#menu a:hover, a.on {
     color: #b2bec3;
 }
 
-#toggle:checked + #menu {
+/* show menu with active class (toggleClass method in Jquery) */
+#menu.active {
     transform: translateY( 0%);
 }
+
 
 /* style search-box */
 #search-box {
@@ -197,10 +245,11 @@ img[alt = "logo"] {
         width: 100vw;
         right: 0;
     }
-    label[for = "toggle"] {
+    /* hide hamburger button */
+    button.hamburger {
         display: none;
     }
-
+    /* change menu to one line display */
     #menu {
         display: flex;
         width: auto;
@@ -213,7 +262,7 @@ img[alt = "logo"] {
         margin: 0;
         padding: 0;
     }
-
+    /* change menu hove and on effects */
     #menu a {
         color: white;
         display: block;
@@ -230,10 +279,6 @@ img[alt = "logo"] {
         color: yellow;
     }
 
-
-    #menu a:hover::after {
-        right: 0px;
-    } 
     /* style search box */
     input[name="search-text"] {
         width: 10vw;
@@ -249,7 +294,7 @@ img[alt = "logo"] {
         left: 4vw;
     }
 } 
-
+/* heading separators */
 .separator {
     width: 150px;
     height: 1px;
