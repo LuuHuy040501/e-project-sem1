@@ -210,6 +210,7 @@ div#gallery-mobile {
     background-color: green;
     color: #fff;
     margin-top: 10px;
+    margin-bottom: 15px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, .8);
 }
 .gallery-btn:hover {
@@ -344,7 +345,7 @@ div#feedback-button {
     padding: 20px 40px;
     color: #fff;
     background-color: green;
-    box-shadow: 0px 5px rgba(0, 0, 0, .8);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .8);
     transition: .5s;
     font-size: 1.2em;
 }
@@ -356,7 +357,9 @@ div#feedback-button {
 #certificate {
     width: 100%;
     margin-top: 50px;
+    height: auto;
 }
+
 #certificate .certificate-text {
     text-align: left;
     padding-left: 30px;
@@ -387,35 +390,116 @@ div#feedback-button {
     border-radius: 50%;
     margin: 20px 40px;
 }
-
+/* style number column */
 div.number {
+    margin-top: 20px;
+    height: auto;
+    width: 100%;
     display: flex;
-    margin-top: 100px;
-    height: 700px;
-}
+    flex-wrap: wrap;
 
-.number .col {
-    height: 150px;
+}
+div.col {
     flex: 1;
-    margin: 10px;
     text-align: center;
-    font-size: 2em;
+    font-size: 3vw;
+    margin: 10px;
+    height: 130px;
+    box-sizing: border-box;
+    position: relative; /* help 4 spans positioned right*/
+    overflow: hidden;
 }
-.number .col .num {
-    padding-top: 25%;
-    font-size: 5vw;
-    color: green;
-    margin-bottom: 20px;
-    height: 22vw;
-    background-image: url(../images/laurel\ wreath2.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
+/* add snake border animation */
+div.col span:first-child {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #fff, green);
+    animation: top_border 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes top_border {
+    0%{transform: translateX(-100%);}
+    100%{transform: translateX(100%);}
+}
+/* right border */
+div.col span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #fff, green);
+    animation: right_border 2s linear infinite;
 }
 
-.number .col p {
+@keyframes right_border {
+    0%{transform: translateY(-100%);}
+    100%{transform: translateY(100%);}
+}
+/* bottom border */
+div.col span:nth-child(3) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, #fff, green);
+    animation: bottom_border 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes bottom_border {
+    0%{transform: translateX(100%);}
+    100%{transform: translateX(-100%);}
+}
+/* left border */
+div.col span:nth-child(4) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to top, #fff,green);
+    animation: left_border 2s linear infinite;
+}
+@keyframes left_border {
+    0%{transform: translateY(100%);}
+    100%{transform: translateY(-100%);}
+}
+/* style the number */
+div.num {
+    margin: 0;
     color: green;
-    font-size: 4vw;
-    margin-top: 0;
+    font-weight: 900;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+div.num::after {
+    content: " +";
+}
+div.num::before {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 1px;
+    background: green;
+    position: absolute; 
+    bottom: -2px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* style text under number */
+div.num + p {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    color: green;
 }
 /**************************************** for desktop ***********************************/
 @media only screen and (min-width: 992px) {
@@ -435,6 +519,7 @@ div.number {
     }
     div#products {
         background-image: url('../images/texture8.jpg');
+        background-attachment: fixed;
         background-size: cover;
         height: 500px;
         margin-top: 150px;
@@ -483,6 +568,7 @@ div.number {
         display: block;
         background: url(../images/texture7.jpg);
         background-size: cover;
+        background-attachment: fixed;
     }
     div#gallery-mobile {
         display: none;
@@ -524,33 +610,51 @@ div.number {
         text-decoration: none;
         background-color: yellow;
     }
-    /** style certicate dection ***/
-    .number .col {
-        height: 150px;
+    /** style certicate section ***/
+    /* clear the flow to prevent that #certificate  have 0px of height */
+    #certificate::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    #certificate {
+        height: auto;
+    }
+    div.number {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        padding-top: 100px;
+    }
+
+    div.col {
         flex: 1;
-        margin: 10px;
-        text-align: center;
-        font-size: 2em;
-    }
-    .number .col .num {
-        padding-top: 75px;
-        font-size: 1.4em;
-        font-weight: 700;
-        color: green;
-        margin-bottom: 20px;
+        margin: 20px;
         height: 200px;
+        font-size: 2em;
+        overflow: visible;
         background-image: url(../images/laurel\ wreath2.jpg);
-        background-size: 100% 100%;
-        letter-spacing: 1px;
-
+        background-size: 100% 90%;
+        background-repeat: no-repeat;
+        background-position:  0 -10px;
+    }
+    /* delte snake border efect */
+    div.col span {
+        display: none;
+    }
+    /* style the number */
+    div.col  div.num {
+        width: 100%;
+        top: 25%;
+        transform: translateY(0);
+        font-size: 2vw;
+    }
+    div.col p {
+        margin-top: 10px;
+        font-size: 1.5vw;
+        bottom: -30px;
     }
 
-    .number .col p {
-        color: green;
-        font-size: 1.2em;
-        margin-top: 0;
-        font-weight: normal;
-    }
 }
 
 
