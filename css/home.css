@@ -1,5 +1,5 @@
 /* style content of home page */
-/* all devices*/
+/* mobile-first: */
 #content {
     margin-top: 50px;
     font-family: "Raleway";
@@ -38,7 +38,7 @@ div#products {
     font-family: "Raleway";
     width: 100%;
     height: 700px;
-    background: url(../images/border1.jpg);
+    background: url("../images/product-background-mobile.jpg");
     background-size: 100vw 66vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -49,7 +49,6 @@ div#products {
 }
 div.carousel-caption {
     font-size: 1.2em;
-
 }
 /* product button */
 .product-btn {
@@ -66,6 +65,7 @@ div.carousel-caption {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+/* for hover effect on desktop */
 .product-btn::after {
     content: "";
     display: block;
@@ -87,15 +87,16 @@ div.carousel-caption {
 
 
 /* slide show products for mobile using swipper library */
-
+/* hide <div> for desktop */
 #for_desktop {
     display: none;
 }
-
+/* show <div> for mobile */
 #for_mobile {
     width: 80vw;
     height: auto;
 }
+/* style slide show with swiper.js */
 .swiper-container {
     position: relative;
 }
@@ -147,17 +148,18 @@ div.image-wrapper>img {
     font-size: 10vw;
     color: green;
 }
-
+/* hide gallery div for desktop */
 div.gallery-desktop {
     display: none;
 }
+/* show slideshow div */
 div#gallery-mobile {
     display: block;
     border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../images/texture12.jpg);
+    background: url("../images/gallery-bg-mobile.jpg");
     background-size: cover;
 }
 
@@ -301,7 +303,7 @@ div#gallery-mobile {
 }
 
 .feedback-box:nth-child(4):hover .icon {
-    box-shadow: 0 0 0 400px #e056fd;
+    box-shadow: 0 0 0 400px #f7b731;
 }
 .feedback-box::before {
     content: '';
@@ -558,6 +560,7 @@ iframe {
 }
 /**************************************** for desktop ***********************************/
 @media only screen and (min-width: 992px) {
+    /* style products section */
     /* hide slide show display full image instead */
     #for_desktop {
         display: block;
@@ -573,14 +576,15 @@ iframe {
         top: 50px;
         margin-top: 50px;
     }
+    /* change background-image */
     div#products {
-        background-image: url('../images/texture8.jpg');
+        background-image: url('../images/products-bg-desktop.jpg');
         background-attachment: fixed;
         background-size: cover;
         height: 500px;
         margin-top: 150px;
     }
-
+    /* button hover effect */
     .product-btn:hover::after {
         bottom: 0;
     }
@@ -588,6 +592,7 @@ iframe {
         color: black;
         text-decoration: none;
     }
+
     div.wrapper {
         display: flex;
         justify-content: center;
@@ -622,7 +627,7 @@ iframe {
     /* gallery section */
     div.gallery-desktop {
         display: block;
-        background: url(../images/texture7.jpg);
+        background: url("../images/gallery-bg-desktop.jpg");
         background-size: cover;
         background-attachment: fixed;
     }
@@ -645,9 +650,8 @@ iframe {
     }
     /*** feedback section ***/
     .feedback-container {
-        /* add baclground image */
-        /* background: url(../images/texture6.jpg); */
-        background-size: 100% 100%;
+
+
         /* center horizontal cards */
         width: 100vw;
         height: 450px;
@@ -752,9 +756,6 @@ iframe {
     .location-detail:hover p::before {
         left: 0;
     }
-
-
-
 }
 
 
