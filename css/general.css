@@ -235,6 +235,44 @@ img[alt = "logo"] {
     width: 100px;
     height: 100px;
 }
+/* style footer */
+div#foot {
+    margin:0;
+    height: 120px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+}
+#copyrights {
+    height: 20px;
+    color: #fff;
+    font-size: 0.8em;
+    width: 100%;
+    position: absolute;
+    top: 30px;
+}
+#social-media {
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+#social-media a {
+    display: inline-flex; /* coi mỗi phần tử a như 1 container của flex */
+    text-decoration: none; 
+    font-size: 3vw;
+    width: 5vw;
+    height: 5vw;
+    background: none; /* để background a ko đề lên before */
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    position: relative;
+}
+
+/* add effect for social button */
 
 /* nav menu  for desktop */
 @media only screen and (min-width: 970px) {
@@ -292,6 +330,62 @@ img[alt = "logo"] {
     #logo {
         top: 0; 
         left: 4vw;
+    }
+    /* style foot section */
+    div#foot {
+        height: 70px;
+        text-align: left;
+        position: relative;
+    }
+    #copyrights {
+        margin-top: 0;
+        position: absolute;
+        width: auto;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 20px;
+        font-size: 1em;
+    }
+    #social-media {
+        width: auto;
+        margin-top: 0;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    /* create a circle button */
+    #social-media a::before {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-image: linear-gradient(to right top, #5ff136, #5eda3a, #5bc43c, #58ae3d, #54993d);
+        border-radius: 50%;
+        z-index: -1;
+        transition: .3s ease-in;
+    }
+    
+    #social-media a i {
+        transition: .3s ease-in;
+    }
+    
+    #social-media a {
+        width: 40pxx;
+        height: 40px;
+        font-size: 16px;
+    }
+    #social-media a::before {
+        width: 40px;
+        height: 40px;
+    }
+    #social-media a:hover::before {
+        transform: scale(0);
+    }
+    #social-media a:hover i {
+        color:  #fff;  
+        transform: scale(2.2);    
     }
 } 
 /* heading separators */

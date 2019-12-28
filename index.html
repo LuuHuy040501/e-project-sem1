@@ -10,6 +10,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
     <!-- count up plugin (fixed bug decrease counting number when scroll to counting section agqain)-->
     <script src="vendor/counter up/jquery.counterup.js"></script>
+    <!-- swiper.js-->
+    <script src="vendor/swiper/swiper.min.js"></script>
     <!-- import fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -28,7 +30,8 @@
     <!-- customer javascript-->
     <script src="js/showMenuOnScroll.js"></script>
     <script src="js/toggleMenu.js"></script>
-    <title>Document</title>
+
+    <title>Star Farm</title>
 </head>
 <body>
     <div id="page">
@@ -469,15 +472,41 @@
                 </div>
             </div> <!-- end  certificate div-->
 
-
+            <div id="location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0951822986176!2d105.7795577148417!3d21.02887719315043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454b3260b1a8b%3A0x862052392e3f478e!2zOCBUw7RuIFRo4bqldCBUaHV54bq_dCwgTeG7uSDEkMOsbmgsIFThu6sgTGnDqm0sIEjDoCBO4buZaSAxMDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1577507653239!5m2!1svi!2s"  frameborder="0" allowfullscreen=""></iframe>
+                <div id="location-info" class="row">
+                    <div class="location-detail col-md-4 ">
+                        <i class="fas fa-envelope"></i>
+                        <p><span>Email:</span><br/ ><b>starfarm@gmail.com</b></p>
+                    </div>
+                    <div class="location-detail col-md-4">
+                        <i class="fas fa-phone"></i>
+                        <p><span>Phone number:</span><br /><b>0333 237 860</b></p>
+                    </div>
+                    <div class="location-detail col-md-4 ">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p><span>Location adress:</span><br /><b>8<sup>th</sup> st Ton That Thuyet, Ha Noi, Viet Nam</b></p>
+                    </div>
+                </div>
+            </div> <!-- end location div-->
         </div><!--end content div-->
 
-        <div id="foot">
-
+        <div id="foot" >
+            <div id="copyrights" >
+                Copyright &copy 2019. All rights reserved by Pink Panther Team 
+            </div>
+            <div id="social-media"  >
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
         </div><!--end foot div-->
     </div><!-- end page div-->
+
     <!-- swiper.js-->
-    <script src="vendor/swiper/swiper.min.js"></script>
+    
     <script>
         // swiper for product section
         var swiperProduct = new Swiper('.swiper-container', {

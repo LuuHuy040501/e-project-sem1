@@ -348,11 +348,19 @@ div#feedback-button {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, .8);
     transition: .5s;
     font-size: 1.2em;
+    text-decoration: none;
 }
 .feedback-btn:hover {
     color: #fff;
     text-decoration: none;
 }
+.feedback-btn:active,
+.feedback-btn:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+
 /*** style certificate section ***/
 #certificate {
     width: 100%;
@@ -501,8 +509,56 @@ div.num + p {
     text-align: center;
     color: green;
 }
+/*** style location section ***/
+#location {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+iframe {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+#location-info {
+    width: 100%;
+    height: auto;
+    margin-bottom: 70px;
+}
+
+.location-detail {
+    text-align: left;
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 25px;
+
+}
+
+.location-detail i.fas {
+    font-size: 40px;
+    position: relative;
+    display: block;
+    color: green;
+}
+.location-detail p {
+    position: absolute;
+    top: 20px;
+    left: 120px;
+}
+.location-detail p > span {
+    font-family: "Raleway";
+    color: #111;
+    font-size: 1.3em;
+}
+.location-detail p>b {
+    color: green;
+    font-size: 1.2em;
+    letter-spacing: 1.5px;
+}
 /**************************************** for desktop ***********************************/
 @media only screen and (min-width: 992px) {
+    /* hide slide show display full image instead */
     #for_desktop {
         display: block;
     }
@@ -611,7 +667,7 @@ div.num + p {
         background-color: yellow;
     }
     /** style certicate section ***/
-    /* clear the flow to prevent that #certificate  have 0px of height */
+    /* clear the flow to prevent that #certificate  has 0px of height */
     #certificate::after {
         content: "";
         clear: both;
@@ -654,6 +710,50 @@ div.num + p {
         font-size: 1.5vw;
         bottom: -30px;
     }
+    
+    /*** style location section ***/
+    #location-info {
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .location-detail {
+        position: relative;
+    }
+    .location-detail i.fas{
+        color: grey;
+    }
+    .location-detail:hover i.fas {
+        color:  green;
+    }
+    .location-detail p {
+        overflow: hidden;
+        font-size: 1em;
+    }
+    .location-detail p>b {
+        font-size: 1.1em;
+        letter-spacing: 1.5px;
+    }
+    /* add hover effect */
+    .location-detail p::before {
+        content: "";
+        position: absolute;
+        top: 25px;
+        left: -100%;
+        width: 60px;
+        height: 2px;
+        background-color: green;
+        transition: .5s;
+    }
+
+    .location-detail:hover p::before {
+        left: 0;
+    }
+
+
 
 }
 
