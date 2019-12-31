@@ -37,9 +37,9 @@
 div#products {
     font-family: "Raleway";
     width: 100%;
-    height: 700px;
+    min-height: 700px;
     background: url("../images/product-background-mobile.jpg");
-    background-size: 100vw 66vh;
+    background-size: 100% 70%;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
