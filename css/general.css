@@ -8,8 +8,10 @@
 
 #page {
     width: 100%;
+    height: auto;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 #head {
@@ -197,6 +199,11 @@ div#banner {
     transform: translate(-50%, -50%);
     text-align: center;
     width: 100%;
+}
+#banner img#logo-img{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
 }
 .welcome {
     font-family: 'Tangerine', sans-serif;
@@ -412,6 +419,17 @@ div#foot {
         color:  #fff;  
         transform: scale(2.2);    
     }
+    /* style banner text */
+    .welcome {
+        font-size: 5em;
+        margin-bottom: 10px;
+    }
+    /* style logo image in banner */
+    #banner img#logo-img{
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+    }
 } 
 
 /* define heading separators  */
@@ -434,6 +452,8 @@ div#foot {
     left: 73px;
     background-color: #cc9a50;
 }
+
+
 
 
 
