@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- jquery cdn-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- import fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" >
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- font awesome-->
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.css">
+    <!--customer stylesheet-->
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/product.css">
+    
+    <!-- customer javascript-->
+    <script src="js/showMenuOnScroll.js"></script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="js/popupEffect.js"></script>
+    <title>Products</title>
+</head>
+<body>
+    <div id="page">
+        <div id="head">
+            <div id="nav">
+                <!-- for responsive menu-->
+                <button class="hamburger">
+                    <span></span>
+                </button>
+
+                <div id="menu">
+                    <a href="index.html"> Home</a>
+                    <a href="product.html" class="on">Product</a>
+                    <a href="#">Gallery</a>
+                    <a href="#">Contact Us</a>
+                </div>
+
+                <div id="search-box">
+                    <input type="text" name="search-text" placeholder="Type to search">
+                    <a href="#" id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+                <div id="logo">
+                    <a href="index.html#about"><img src="images/logo.png" alt="logo"></a>
+                </div> 
+            </div><!-- end nav-->
+
+
+            <div id="banner">
+                <p class="welcome">Welcome to Star Organic farm</p>
+                <img src="images/logo.png" alt="star-logo" id ="logo-img">
+                <h1 class="intro">Lorem ipsum dolor sit amet consectetur</h1>
+                <p class="slogan">Lorem ipsum dolor sit amet</p>
+            </div> <!-- end banner-->
+        </div><!--end head div-->
+
+        <div id="content">
+            <div id="general-title">
+                <h2>Products</h2>
+            </div>
+            <div id="product-container" class="container">
+                <div class="row" id="row1">
+                    <div class="product-card col-md-3 col-sm-6">
+                        <div class="product-img">
+                            <img src="images/organic milk.jpg" alt="" />
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
+                            <p class="product-price">&dollar; 3.34</p>
+                            <a href="#row1" class="MoreInfo mybtn" onclick="toggle(1)">More Info</a>
+                            <a href="#" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="product-card col-md-3 col-sm-6">
+                        <div class="product-img">
+                            <img src="images/organic milk.jpg" alt="" />
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
+                            <p class="product-price">&dollar; 3.34</p>
+                            <a href="#row1" class="MoreInfo mybtn" onclick="toggle(2)">More Info</a>
+                            <a href="#" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="product-card col-md-3 col-sm-6">
+                        <div class="product-img">
+                            <img src="images/organic milk.jpg" alt="" />
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
+                            <p class="product-price">&dollar; 3.34</p>
+                            <a href="#row1" class="MoreInfo mybtn" onclick="toggle(3)" >More Info</a>
+                            <a href="#" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="product-card col-md-3 col-sm-6">
+                        <div class="product-img">
+                            <img src="images/organic milk.jpg" alt="" />
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
+                            <p class="product-price">&dollar; 3.34</p>
+                            <a href="#row1" class="MoreInfo mybtn" onclick="toggle(4)" >More Info</a>
+                            <a href="#" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                </div><!--end row 1-->
+
+                <div class="row" id="row2">
+                    <div class="product-card col-md-3 col-sm-6">
+                        <div class="product-img">
+                            <img src="images/product4.jpg" alt="" />
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
+                            <p class="product-price">&dollar; 3.34</p>
+                            <a href="#row2" class="MoreInfo mybtn" onclick="toggle(5)">More Info</a>
+                            <a href="#" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="product-card col-md-3 col-sm-6">
+                        <div class="product-img">
+                            <img src="images/product4.jpg" alt="" />
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
+                            <p class="product-price">&dollar; 3.34</p>
+                            <a href="#row2" class="MoreInfo mybtn" onclick="toggle(6)">More Info</a>
+                            <a href="#" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="product-card col-md-3 col-sm-6">
+                        <div class="product-img">
+                            <img src="images/product4.jpg" alt="" />
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
+                            <p class="product-price">&dollar; 3.34</p>
+                            <a href="#row2" class="MoreInfo mybtn" onclick="toggle(7)">More Info</a>
+                            <a href="#" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="product-card col-md-3 col-sm-6">
+                        <div class="product-img">
+                            <img src="images/product4.jpg" alt="" />
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
+                            <p class="product-price">&dollar; 3.34</p>
+                            <a href="#row2" class="MoreInfo mybtn" onclick="toggle(8)">More Info</a>
+                            <a href="#" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                </div><!-- end row 2-->
+
+                <div class="row" id="row3">
+                    <div class="product-card col-md-3 col-sm-6">
+                        <div class="product-img">
+                            <img src="images/product3.jpg" alt="" />
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
+                            <p class="product-price">&dollar; 3.34</p>
+                            <a href="#row3" class="MoreInfo mybtn" onclick="toggle(9)">More Info</a>
+                            <a href="#" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="product-card col-md-3 col-sm-6">
+                        <div class="product-img">
+                            <img src="images/product3.jpg" alt="" />
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
+                            <p class="product-price">&dollar; 3.34</p>
+                            <a href="#row3" class="MoreInfo mybtn" onclick="toggle(10)">More Info</a>
+                            <a href="#" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="product-card col-md-3 col-sm-6">
+                        <div class="product-img">
+                            <img src="images/product3.jpg" alt="" />
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
+                            <p class="product-price">&dollar; 3.34</p>
+                            <a href="#row3" class="MoreInfo mybtn" onclick="toggle(11)">More Info</a>
+                            <a href="#" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="product-card col-md-3 col-sm-6">
+                        <div class="product-img">
+                            <img src="images/product3.jpg" alt="" />
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
+                            <p class="product-price">&dollar; 3.34</p>
+                            <a href="#row3" class="MoreInfo mybtn" onclick="toggle(12)">More Info</a>
+                            <a href="#" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                </div><!-- end row3-->
+                <div class="row" id="row4">
+                    <div class="product-card col-md-3 col-sm-6">
+                        <div class="product-img">
+                            <img src="images/product2.jpg" alt="" />
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
+                            <p class="product-price">&dollar; 3.34</p>
+                            <a href="#row4" class="MoreInfo mybtn" onclick="toggle(13)">More Info</a>
+                            <a href="#" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="product-card col-md-3 col-sm-6">
+                        <div class="product-img">
+                            <img src="images/product2.jpg" alt="" />
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
+                            <p class="product-price">&dollar; 3.34</p>
+                            <a href="#row4" class="MoreInfo mybtn" onclick="toggle(14)">More Info</a>
+                            <a href="#" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="product-card col-md-3 col-sm-6">
+                        <div class="product-img">
+                            <img src="images/product2.jpg" alt="" />
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
+                            <p class="product-price">&dollar; 3.34</p>
+                            <a href="#row4" class="MoreInfo mybtn" onclick="toggle(15)">More Info</a>
+                            <a href="#" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="product-card col-md-3 col-sm-6">
+                        <div class="product-img">
+                            <img src="images/product2.jpg" alt="" />
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
+                            <p class="product-price">&dollar; 3.34</p>
+                            <a href="#row4" class="MoreInfo mybtn " onclick="toggle(16)">More Info</a>
+                            <a href="#" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="popup-container">
+                <div id="popup-1" class="popup">
+                    <h2>product 1</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
+                    <a href="#row1" class="mybtn close-btn" onclick="toggle(1)">Close</a>
+                </div>
+                <div id="popup-2" class="popup">
+                    <h2>product 2</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
+                    <a href="#row1" class="mybtn close-btn" onclick="toggle(2)">Close</a>
+                </div>
+                <div id="popup-3" class="popup">
+                    <h2>product 3</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
+                    <a href="#row1" class="mybtn close-btn" onclick="toggle(3)">Close</a>
+                </div>
+                <div id="popup-4" class="popup">
+                    <h2>product 4</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
+                    <a href="#row1" class="mybtn close-btn" onclick="toggle(4)"> Close</a>
+                </div>
+                <!-- end row 1 popup-->
+                <div id="popup-5" class="popup">
+                    <h2>product 5</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
+                    <a href="#row2" class="mybtn close-btn" onclick="toggle(5)"> Close</a>
+                </div>
+                <div id="popup-6" class="popup">
+                    <h2>product 6</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
+                    <a href="#row2" class="mybtn close-btn" onclick="toggle(6)"> Close</a>
+                </div>
+                <div id="popup-7" class="popup">
+                    <h2>product 7</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
+                    <a href="#row2" class="mybtn close-btn" onclick="toggle(7)"> Close</a>
+                </div>
+                <div id="popup-8" class="popup">
+                    <h2>product 8</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
+                    <a href="#row2" class="mybtn close-btn" onclick="toggle(8)"> Close</a>
+                </div>
+                <!-- end row 2 popup-->
+                <div id="popup-9" class="popup">
+                    <h2>product 9</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
+                    <a href="#row3" class="mybtn close-btn" onclick="toggle(9)"> Close</a>
+                </div>
+                <div id="popup-10" class="popup">
+                    <h2>product 10</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
+                    <a href="#row3" class="mybtn close-btn" onclick="toggle(10)"> Close</a>
+                </div>
+                <div id="popup-11" class="popup">
+                    <h2>product 11</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
+                    <a href="#row3" class="mybtn close-btn" onclick="toggle(11)"> Close</a>
+                </div>
+                <div id="popup-12" class="popup">
+                    <h2>product 12</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
+                    <a href="#row3" class="mybtn close-btn" onclick="toggle(12)"> Close</a>
+                </div>
+                <!-- end row 3 popup-->
+                <div id="popup-13" class="popup">
+                    <h2>product 13</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
+                    <a href="#row4" class="mybtn close-btn" onclick="toggle(13)"> Close</a>
+                </div>
+                <div id="popup-14" class="popup">
+                    <h2>product 14</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
+                    <a href="#row4" class="mybtn close-btn" onclick="toggle(14)"> Close</a>
+                </div>
+                <div id="popup-15" class="popup">
+                    <h2>product 15</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
+                    <a href="#row4" class="mybtn close-btn" onclick="toggle(15)"> Close</a>
+                </div>
+                <div id="popup-16" class="popup">
+                    <h2>product 16</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
+                    <a href="#row4" class="mybtn close-btn" onclick="toggle(16)"> Close</a>
+                </div>
+                <!-- end row 4-->
+            </div>
+            
+        </div><!--end content div-->
+
+        <div id="foot" >
+            <div id="copyrights" >
+                Copyright &copy 2019. All rights reserved by Pink Panther Team 
+            </div>
+            <div id="social-media" >
+                <a href="#" ><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div><!--end foot div-->
+    </div><!-- end page div-->
+</body>
+</html>
