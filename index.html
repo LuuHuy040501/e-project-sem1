@@ -43,8 +43,16 @@
                 </button>
 
                 <div id="menu">
-                    <a href="#" class="on">Home</a>
-                    <a href="product.html">Product</a>
+                    <a href="index.html" class="on">Home</a>
+                    <div class="dropdown-item">
+                        <a href="product.html" id ="product-nav">Product <i class="fas fa-chevron-down"></i></a>
+                        <div class="subitem">
+                            <a href="#">Product 1</a>
+                            <a href="#">Product 2</a>
+                            <a href="#">Product 3</a>
+                            <a href="#">Product 4</a>
+                        </div>
+                    </div>
                     <a href="#">Gallery</a>
                     <a href="#">Contact Us</a>
                 </div>
@@ -540,6 +548,9 @@
     <!-- counter up number-->
     <script>
         $(".num").counterUp({delay: 10, time: 2000});
+    </script>
+    <script>
+        
     </script>
 </body>
 </html>

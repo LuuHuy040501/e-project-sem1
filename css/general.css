@@ -33,6 +33,7 @@
     transition: .5s;
     box-sizing: border-box;
 }
+
 /*  hidden navbar when sroll down (showMenuOnScroll.js)*/
 #nav.hiden {
     transform: translateY(-550%);
@@ -115,17 +116,18 @@ button.hamburger.toggle span::after {
     transform: translateY(-200%);
     transition: transform .3s linear;
     z-index: 10;
+    top: 80px;
 }
 
 /* show menu with active class (toggleClass method in Jquery) */
 #menu.active {
-    transform: translateY(25%);
+    transform: translateY(0%);
 }
 
 /* style nav link for mobile */
 #menu a {
     display: block;
-    width: 100%; /* one line for one link */
+    width: auto; /* one line for one link */
     clear: left; 
     text-decoration: none;
     color: white;
@@ -137,11 +139,23 @@ button.hamburger.toggle span::after {
     top: 10px;
     letter-spacing: 0.2em;
 }
+
 /* hover and on effect */
 #menu a:hover, a.on {
     color: #b2bec3;
 }
-
+/* style dropdown menu */
+#menu .dropdown-item {
+    display: block;
+    overflow: hidden;
+}
+.dropdown-item .subitem {
+    max-height: 0;
+    transition: max-height .5s;
+}
+.dropdown-item:hover  .subitem {
+    max-height: 400px;
+ }
 
 /* style search-box */
 #search-box {
