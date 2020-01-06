@@ -115,6 +115,9 @@
     text-decoration: none;
     color: #fff;
     font-size: 0.9em;
+    border: none;
+    outline: none;
+    background-color: #fff;
 }
 
 .mybtn:hover {
@@ -122,10 +125,6 @@
     text-decoration: none;
 }
 
-.mybtn:visited {
-    color: #fff;
-    text-decoration: none;
-}
 
 /*** popup efect ***/
 
@@ -161,19 +160,19 @@
     .mybtn {
         padding: 0.3vw 1.2vw;
         font-size: 1vw;
+        transition: .5s;
+    }
+    .mybtn:hover {
+        transform: scale(1.2);
     }
     .product-details .MoreInfo {
         transition: .5s;
     }
-    .product-details .MoreInfo:hover {
-        transform: scale(1.2);
-    }
+
     .product-details .AddToCart {
         transition: .5s;
     }
-    .product-details .AddToCart:hover {
-        transform: scale(1.2);
-    }
+  
     .product-details .AddToCart i {
         transition: .5s;
     }
