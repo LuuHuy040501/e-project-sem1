@@ -39,7 +39,7 @@ html {
 
 /*  hidden navbar when sroll down (showMenuOnScroll.js)*/
 #nav.hiden {
-    transform: translateY(-550%);
+    transform: translateY(-950%);
 }
 
 /* style hamburger buttton */
@@ -335,10 +335,6 @@ div#foot {
     }
     #nav {
         width: 100vw;
-        right: 0;
-        padding: 0;
-        margin: 0;
-        position: relative;
     }
     /* hide hamburger button */
     button.hamburger {
@@ -478,7 +474,7 @@ div#foot {
         width: auto;
         margin-top: 0;
         position: absolute;
-        right: 0;
+        right: 70px;
         top: 50%;
         transform: translateY(-50%);
     }
@@ -549,6 +545,62 @@ div#foot {
     background-color: #cc9a50;
 }
 
+/* style the up to top button */
+.UpToTop {
+    position: fixed;
+    z-index: 20;
+    bottom: 10px;
+    right: 10px;
+    height: 60px;
+    line-height: 60px;
+    width: 60px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #77B81E;
+    /* hide uptotop button */
+    display: none;
+
+}
+.UpToTop i {
+    display: inline-block;
+    /* center vertically and horizontally */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px -25px;
+    z-index: -1;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.5em;
+    color: #111;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: .7s;
+
+
+}
+a.UpToTop::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url(../images/UptoTop-btn.png);
+    background-size: cover;
+    transition: .7s;
+}
+.UpToTop:hover::before {
+    transform: scale(0);
+}
+
+.UpToTop:hover i {
+    transform: scale(1);
+}
 
 
 
