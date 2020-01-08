@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- jquery cdn-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- way point plugin-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <!-- count up plugin (fixed bug decrease counting number when scroll to counting section again)-->
+    <script src="vendor/counter up/jquery.counterup.js"></script>
+    <!-- swiper.js-->
+    <script src="vendor/swiper/swiper.min.js"></script>
+    <!-- import fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- font awesome-->
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.css">
+    <!-- swiper-->
+    <link rel="stylesheet" href="vendor/swiper/swiper.min.css">
+    <!--customer stylesheet-->
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/Image-overlay-effect.css">
+
+    <!-- customer javascript-->
+    <script src="js/showMenuOnScroll.js"></script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="js/DropMenu.js"></script>
+    <script src="js/ScrollToTop.js"></script>
+
+    <title>Star Organic Farm</title>
+</head>
+
+<body>
+    <div id="page">
+        <div id="head">
+            <div id="nav">
+                <!-- for responsive menu-->
+                <button class="hamburger">
+                    <span></span>
+                </button>
+
+                <div id="menu">
+                    <a href="index.html" class="on">Home</a>
+                    <div class="dropdown-item">
+                        <a href="#" id="drop"> Products
+                            <span class='cheveron'></span>
+                        </a>
+                        <div class="subitem">
+                            <a href="product1.html">Product 1</a>
+                            <a href="product2.html">Product 2</a>
+                            <a href="product3.html">Product 3</a>
+                            <a href="product4.html">Product 4</a>
+                        </div>
+                    </div>
+                    <a href="#">Gallery</a>
+                    <a href="#">Contact Us</a>
+                </div>
+
+                <div id="search-box">
+                    <input type="text" name="search-text" placeholder="Type to search">
+                    <a href="#" id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+                <div id="logo">
+                    <a href="index.html#about"><img src="images/logo.png" alt="logo"></a>
+                </div>
+            </div><!-- end nav-->
+
+
+            <div id="banner">
+                <p class="welcome">Welcome to Star Organic farm</p>
+                <img src="images/logo.png" alt="star-logo" id="logo-img">
+                <h1 class="intro">Lorem ipsum dolor sit amet consectetur</h1>
+                <p class="slogan">Lorem ipsum dolor sit amet</p>
+            </div> <!--end banner-->
+        </div>
+        <!--end head div-->
+
+        <div id="content">
+            <div class="container">
+                <div class="text-center">
+					<div class="col-lg-12">
+						<h3>stay in touch</h3>
+						<h2>We are interested in hearing from you</h2>
+						<span class="separator"></span>
+					</div>
+				</div> <!--end text center div-->
+                <div class="contact-form">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="name">Your Name</label>
+                            <div class="form-group">
+                                <input class="form-control" name="name" type="text" id="name" placeholder=""
+                                    autocomplete="off">
+                            </div>
+                        </div> <!--end fill name div-->
+                        <div class="col-md-4">
+                            <label for="email">Your Email</label>
+                            <div class="form-group">
+                                <input class="form-control" name="email" type="text" id="email"
+                                    placeholder="" autocomplete="off">
+                            </div>
+                        </div> <!--end fill email div-->
+                        <div class="col-md-4">
+                            <label for="subject">Subject</label>
+                            <div class="form-group">
+                                <input class="form-control" name="subject" type="text" id="subject"
+                                    placeholder="" autocomplete="off">
+                            </div>
+                        </div> <!--end fill subject div-->
+                        <div class="col-md-12">
+                            <label for="comments">Your Message</label>
+                            <div class="form-group">
+                                <textarea class="form-control" name="comments" cols="40" rows="3"
+                                    id="comments" placeholder=""></textarea>
+                            </div>
+                            <div id="message"></div>
+                            <div>
+                                <input type="submit" class="button green rounded" id="submit"
+                                    value="Send Message">
+                            </div>
+                        </div> <!--end fill message div-->
+                    </div>
+                </div> <!--end contact form div-->
+                <div id="location">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0951822986176!2d105.7795577148417!3d21.02887719315043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454b3260b1a8b%3A0x862052392e3f478e!2zOCBUw7RuIFRo4bqldCBUaHV54bq_dCwgTeG7uSDEkMOsbmgsIFThu6sgTGnDqm0sIEjDoCBO4buZaSAxMDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1577507653239!5m2!1svi!2s"
+                        frameborder="0" allowfullscreen=""></iframe>
+                    <div id="location-info" class="row">
+                        <div class="location-detail col-md-4 ">
+                            <i class="fas fa-envelope"></i>
+                            <p><span>Email:</span><br /><b>starfarm@gmail.com</b></p>
+                        </div>
+                        <div class="location-detail col-md-4">
+                            <i class="fas fa-phone"></i>
+                            <p><span>Phone number:</span><br /><b>0333 237 860</b></p>
+                        </div>
+                        <div class="location-detail col-md-4 ">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p><span>Location adress:</span><br /><b>8<sup>th</sup> st Ton That Thuyet, Ha Noi, Viet Nam</b>
+                            </p>
+                        </div>
+                    </div>
+                </div> <!--end location div-->
+            </div> <!--end container div-->
+        </div> <!--end content div-->
+
+        <div id="foot">
+            <div id="copyrights">
+                Copyright &copy 2019. All rights reserved by Pink Panther Team
+            </div>
+            <div id="social-media">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <!--end foot div-->
+    </div><!-- end page div-->
+    <a href="#" class="UpToTop"><i class="fas fa-arrow-up"></i></a>
+    <!-- swiper.js-->
+
+    <!-- Customer script-->
+    <script>
+        // swiper for product section
+        var swiperProduct = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <!-- swiper for gallery section-->
+    <script>
+        var swiperGallery = new Swiper('.swiper-gallery', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 60,
+                stretch: 0,
+                depth: 500,
+                modifier: 4,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+    <!-- counter up number-->
+    <script>
+        $(".num").counterUp({
+            delay: 10,
+            time: 2000
+        });
+    </script>
+
+</body>
+
+</html>
