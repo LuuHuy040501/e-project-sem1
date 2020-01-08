@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- jquery cdn-->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    
     <!-- import fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -14,16 +15,20 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- font awesome-->
     <link rel="stylesheet" href="vendor/fontawesome/css/all.css">
+    <!-- swiper plugin-->
+    <script src="vendor/swiper/swiper.min.js"></script>
+    <link rel="stylesheet" href="vendor/swiper/swiper.min.css">
     <!--customer stylesheet-->
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/product.css">
+
     <!-- customer javascript-->
     <script src="js/showMenuOnScroll.js"></script>
     <script src="js/toggleMenu.js"></script>
     <script src="js/DropMenu.js"></script>
     <script src="js/popupEffect.js"></script>
     <script src="js/ScrollToTop.js"></script>
-    
+
     <title>Products</title>
 </head>
 <body>
@@ -62,64 +67,124 @@
                     <a href="index.html#about"><img src="images/logo.png" alt="logo"></a>
                 </div> 
             </div><!-- end nav-->
-
-
+        
+                <!-- Swiper -->
+            <div class="swiper-container" id="banner-slideshow">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-img">
+                            <img src="images/product-banner.jpg" alt="">
+                        </div>
+                        <div class="slide-caption">
+                            <div class="content">
+                                <h3>Lorem, ipsum dolor .</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nostrum!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-img">
+                            <img src="images/product-banner1.jpg" alt="">
+                        </div>
+                        <div class="slide-caption">
+                            <div class="content">
+                                <h3>Lorem, ipsum dolor .</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nostrum!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-img">
+                            <img src="images/product1.jpg" alt="">
+                        </div>
+                        <div class="slide-caption">
+                            <div class="content">
+                                <h3>Lorem, ipsum dolor .</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nostrum!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-img">
+                            <img src="images/product3.jpg" alt="">
+                        </div>
+                        <div class="slide-caption">
+                            <div class="content">
+                                <h3>Lorem, ipsum dolor .</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nostrum!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+     
+<!-- 
             <div id="banner">
                 <p class="welcome">Welcome to Star Organic farm</p>
                 <img src="images/logo.png" alt="star-logo" id ="logo-img">
                 <h1 class="intro">Lorem ipsum dolor sit amet consectetur</h1>
                 <p class="slogan">Lorem ipsum dolor sit amet</p>
-            </div> <!-- end banner-->
+            </div> end banner -->
+
         </div><!--end head div-->
 
         <div id="content">
             <div id="general-title">
                 <h2>Product 1</h2>
+                <div id="page-location">
+                    <a href="index.html" class="border-right">Home</a>
+                    <a href="product1.html">Product 1</a>
+                </div>
             </div>
             <div id="product-container" class="container">
                 <div class="row" id="row1">
                     <div class="product-card col-md-3 col-sm-6">
                         <div class="product-img">
-                            <img src="images/organic milk.jpg" alt="" />
+                            <img src="images/organic milk.jpg" alt="" onclick="toggle(1)" />
                         </div>
                         <div class="product-details">
                             <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
                             <p class="product-price">&dollar; 3.34</p>
-                            <button type="button" class="MoreInfo mybtn" onclick="toggle(1)">More Info</button>
-                            <button type ="button" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+                            <a href="product-detail.html" class="MoreInfo mybtn" target="_blank">More Info</a>
+                            <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                         </div>
                     </div>
                     <div class="product-card col-md-3 col-sm-6">
                         <div class="product-img">
-                            <img src="images/organic milk.jpg" alt="" />
+                            <img src="images/organic milk.jpg" alt="" onclick="toggle(2)" />
                         </div>
                         <div class="product-details">
                             <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
                             <p class="product-price">&dollar; 3.34</p>
-                            <button type="button" class="MoreInfo mybtn" onclick="toggle(2)">More Info</button>
-                            <button type ="button" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+                            <a href="product-detail.html" class="MoreInfo mybtn" target="_blank">More Info</a>
+                            <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                         </div>
                     </div>
                     <div class="product-card col-md-3 col-sm-6">
                         <div class="product-img">
-                            <img src="images/organic milk.jpg" alt="" />
+                            <img src="images/organic milk.jpg" alt="" onclick="toggle(3)" />
                         </div>
                         <div class="product-details">
                             <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
                             <p class="product-price">&dollar; 3.34</p>
-                            <button type="button" class="MoreInfo mybtn" onclick="toggle(3)" >More Info</button>
-                            <button type="button" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+                            <a href="product-detail.html" class="MoreInfo mybtn" target="_blank">More Info</a>
+                            <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                         </div>
                     </div>
                     <div class="product-card col-md-3 col-sm-6">
                         <div class="product-img">
-                            <img src="images/organic milk.jpg" alt="" />
+                            <img src="images/organic milk.jpg" alt="" onclick="toggle(4)" />
                         </div>
                         <div class="product-details">
                             <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
                             <p class="product-price">&dollar; 3.34</p>
-                            <button type="button" class="MoreInfo mybtn" onclick="toggle(4)" >More Info</button>
-                            <button type="button" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+                            <a href="product-detail.html" class="MoreInfo mybtn" target="_blank">More Info</a>
+                            <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                         </div>
                     </div>
                 </div><!--end row 1-->
@@ -127,46 +192,46 @@
                 <div class="row" id="row2">
                     <div class="product-card col-md-3 col-sm-6">
                         <div class="product-img">
-                            <img src="images/product4.jpg" alt="" />
+                            <img src="images/product4.jpg" alt="" onclick="toggle(5)" />
                         </div>
                         <div class="product-details">
                             <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
                             <p class="product-price">&dollar; 3.34</p>
-                            <button type="button" class="MoreInfo mybtn" onclick="toggle(5)" >More Info</button>
-                            <button type="button" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+                            <a href="product-detail.html" class="MoreInfo mybtn" target="_blank">More Info</a>
+                            <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                         </div>
                     </div>
                     <div class="product-card col-md-3 col-sm-6">
                         <div class="product-img">
-                            <img src="images/product4.jpg" alt="" />
+                            <img src="images/product4.jpg" alt="" onclick="toggle(6)" />
                         </div>
                         <div class="product-details">
                             <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
                             <p class="product-price">&dollar; 3.34</p>
-                            <button type="button" class="MoreInfo mybtn" onclick="toggle(6)" >More Info</button>
-                            <button type="button" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+                            <a href="product-detail.html" class="MoreInfo mybtn" target="_blank">More Info</a>
+                            <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                         </div>
                     </div>
                     <div class="product-card col-md-3 col-sm-6">
                         <div class="product-img">
-                            <img src="images/product4.jpg" alt="" />
+                            <img src="images/product4.jpg" alt="" onclick="toggle(7)" />
                         </div>
                         <div class="product-details">
                             <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
                             <p class="product-price">&dollar; 3.34</p>
-                            <button type="button" class="MoreInfo mybtn" onclick="toggle(7)" >More Info</button>
-                            <button type="button" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+                            <a href="product-detail.html" class="MoreInfo mybtn" target="_blank">More Info</a>
+                            <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                         </div>
                     </div>
                     <div class="product-card col-md-3 col-sm-6">
                         <div class="product-img">
-                            <img src="images/product4.jpg" alt="" />
+                            <img src="images/product4.jpg" alt="" onclick="toggle(8)" />
                         </div>
                         <div class="product-details">
                             <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
                             <p class="product-price">&dollar; 3.34</p>
-                            <button type="button" class="MoreInfo mybtn" onclick="toggle(8)" >More Info</button>
-                            <button type="button" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+                            <a href="product-detail.html" class="MoreInfo mybtn" target="_blank">More Info</a>
+                            <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                         </div>
                     </div>
                 </div><!-- end row 2-->
@@ -174,183 +239,199 @@
                 <div class="row" id="row3">
                     <div class="product-card col-md-3 col-sm-6">
                         <div class="product-img">
-                            <img src="images/product3.jpg" alt="" />
+                            <img src="images/product3.jpg" alt="" onclick="toggle(9)" />
                         </div>
                         <div class="product-details">
                             <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
                             <p class="product-price">&dollar; 3.34</p>
-                            <button type="button" class="MoreInfo mybtn" onclick="toggle(9)" >More Info</button>
-                            <button type="button" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+                            <a href="product-detail.html" class="MoreInfo mybtn" target="_blank">More Info</a>
+                            <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                         </div>
                     </div>
                     <div class="product-card col-md-3 col-sm-6">
                         <div class="product-img">
-                            <img src="images/product3.jpg" alt="" />
+                            <img src="images/product3.jpg" alt="" onclick="toggle(10)" />
                         </div>
                         <div class="product-details">
                             <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
                             <p class="product-price">&dollar; 3.34</p>
-                            <button type="button" class="MoreInfo mybtn" onclick="toggle(10)" >More Info</button>
-                            <button type="button" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+                            <a href="product-detail.html" class="MoreInfo mybtn" target="_blank">More Info</a>
+                            <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                         </div>
                     </div>
                     <div class="product-card col-md-3 col-sm-6">
                         <div class="product-img">
-                            <img src="images/product3.jpg" alt="" />
+                            <img src="images/product3.jpg" alt="" onclick="toggle(11)" />
                         </div>
                         <div class="product-details">
                             <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
                             <p class="product-price">&dollar; 3.34</p>
-                            <button type="button" class="MoreInfo mybtn" onclick="toggle(11)" >More Info</button>
-                            <button type="button" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+                            <a href="product-detail.html" class="MoreInfo mybtn" target="_blank">More Info</a>
+                            <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                         </div>
                     </div>
                     <div class="product-card col-md-3 col-sm-6">
                         <div class="product-img">
-                            <img src="images/product3.jpg" alt="" />
+                            <img src="images/product3.jpg" alt="" onclick="toggle(12)" />
                         </div>
                         <div class="product-details">
                             <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
                             <p class="product-price">&dollar; 3.34</p>
-                            <button type="button" class="MoreInfo mybtn" onclick="toggle(12)" >More Info</button>
-                            <button type="button" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+                            <a href="product-detail.html" class="MoreInfo mybtn" target="_blank">More Info</a>
+                            <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                         </div>
                     </div>
                 </div><!-- end row3-->
                 <div class="row" id="row4">
                     <div class="product-card col-md-3 col-sm-6">
                         <div class="product-img">
-                            <img src="images/product2.jpg" alt="" />
+                            <img src="images/product2.jpg" alt="" onclick="toggle(13)" />
                         </div>
                         <div class="product-details">
                             <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
                             <p class="product-price">&dollar; 3.34</p>
-                            <button type="button" class="MoreInfo mybtn" onclick="toggle(13)" >More Info</button>
-                            <button type="button" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+                            <a href="product-detail.html" class="MoreInfo mybtn" target="_blank">More Info</a>
+                            <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                         </div>
                     </div>
                     <div class="product-card col-md-3 col-sm-6">
                         <div class="product-img">
-                            <img src="images/product2.jpg" alt="" />
+                            <img src="images/product3.jpg" alt="" onclick="toggle(14)" />
                         </div>
                         <div class="product-details">
                             <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
                             <p class="product-price">&dollar; 3.34</p>
-                            <button type="button" class="MoreInfo mybtn" onclick="toggle(14)" >More Info</button>
-                            <button type="button" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+                            <a href="product-detail.html" class="MoreInfo mybtn" target="_blank">More Info</a>
+                            <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                         </div>
                     </div>
                     <div class="product-card col-md-3 col-sm-6">
                         <div class="product-img">
-                            <img src="images/product2.jpg" alt="" />
+                            <img src="images/product3.jpg" alt="" onclick="toggle(15)" />
                         </div>
                         <div class="product-details">
                             <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
                             <p class="product-price">&dollar; 3.34</p>
-                            <button type="button" class="MoreInfo mybtn" onclick="toggle(15)" >More Info</button>
-                            <button type="button" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+                            <a href="product-detail.html" class="MoreInfo mybtn" target="_blank">More Info</a>
+                            <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                         </div>
                     </div>
                     <div class="product-card col-md-3 col-sm-6">
                         <div class="product-img">
-                            <img src="images/product2.jpg" alt="" />
+                            <img src="images/product3.jpg" alt="" onclick="toggle(16)" />
                         </div>
                         <div class="product-details">
                             <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
                             <p class="product-price">&dollar; 3.34</p>
-                            <button type="button" class="MoreInfo mybtn" onclick="toggle(16)" >More Info</button>
-                            <button type="button" class="AddToCart mybtn" ><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+                            <a href="product-detail.html" class="MoreInfo mybtn" target="_blank">More Info</a>
+                            <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                         </div>
                     </div>
-                </div>
-            </div>
-
+                </div> <!-- end row 4-->
+            </div> <!-- end product container-->
+            <!-- popup information for each product onclick product image-->
             <div id="popup-container">
                 <div id="popup-1" class="popup">
                     <h2>product 1</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
                     <button type="button" class="close-btn mybtn" onclick="toggle(1)">Close</button>
+                    <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                 </div>
                 <div id="popup-2" class="popup">
                     <h2>product 2</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
                     <button type="button" class="close-btn mybtn" onclick="toggle(2)">Close</button>
+                    <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                 </div>
                 <div id="popup-3" class="popup">
                     <h2>product 3</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
                     <button type="button" class="close-btn mybtn" onclick="toggle(3)">Close</button>
+                    <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                 </div>
                 <div id="popup-4" class="popup">
                     <h2>product 4</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
                     <button type="button" class="close-btn mybtn" onclick="toggle(4)">Close</button>
+                    <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                 </div>
                 <!-- end row 1 popup-->
                 <div id="popup-5" class="popup">
                     <h2>product 5</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
                     <button type="button" class="close-btn mybtn" onclick="toggle(5)">Close</button>
+                    <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                 </div>
                 <div id="popup-6" class="popup">
                     <h2>product 6</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
                     <button type="button" class="close-btn mybtn" onclick="toggle(6)">Close</button>
+                    <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                 </div>
                 <div id="popup-7" class="popup">
                     <h2>product 7</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
                     <button type="button" class="close-btn mybtn" onclick="toggle(7)">Close</button>
+                    <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                 </div>
                 <div id="popup-8" class="popup">
                     <h2>product 8</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
                     <button type="button" class="close-btn mybtn" onclick="toggle(8)">Close</button>
+                    <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                 </div>
                 <!-- end row 2 popup-->
                 <div id="popup-9" class="popup">
                     <h2>product 9</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
                     <button type="button" class="close-btn mybtn" onclick="toggle(9)">Close</button>
+                    <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                 </div>
                 <div id="popup-10" class="popup">
                     <h2>product 10</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
                     <button type="button" class="close-btn mybtn" onclick="toggle(10)">Close</button>
+                    <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                 </div>
                 <div id="popup-11" class="popup">
                     <h2>product 11</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
                     <button type="button" class="close-btn mybtn" onclick="toggle(11)">Close</button>
+                    <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                 </div>
                 <div id="popup-12" class="popup">
                     <h2>product 12</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
                     <button type="button" class="close-btn mybtn" onclick="toggle(12)">Close</button>
+                    <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                 </div>
                 <!-- end row 3 popup-->
                 <div id="popup-13" class="popup">
                     <h2>product 13</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
                     <button type="button" class="close-btn mybtn" onclick="toggle(13)">Close</button>
+                    <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                 </div>
                 <div id="popup-14" class="popup">
                     <h2>product 14</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
                     <button type="button" class="close-btn mybtn" onclick="toggle(14)">Close</button>
+                    <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                 </div>
                 <div id="popup-15" class="popup">
                     <h2>product 15</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
                     <button type="button" class="close-btn mybtn" onclick="toggle(15)">Close</button>
+                    <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
                 </div>
                 <div id="popup-16" class="popup">
                     <h2>product 16</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, alias, fugit perspiciatis fuga recusandae sapiente ea dolores sit accusamus veritatis delectus itaque velit quo! Corrupti ipsum, sapiente minus cupiditate, labore voluptas aperiam omnis eaque soluta praesentium explicabo cum delectus exercitationem voluptatibus in, asperiores eveniet laboriosam dolorum. Veniam, quisquam totam. Voluptatum, quas cupiditate! Corrupti nesciunt impedit earum ipsa ab laborum, veniam voluptate voluptatibus? Provident, explicabo qui iste vel optio delectus voluptates.</p>
                     <button type="button" class="close-btn mybtn" onclick="toggle(16)">Close</button>
-                </div>
+                    <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
+                </div>   
                 <!-- end row 4-->
-            </div>
+            </div><!-- end popup container-->
             
         </div><!--end content div-->
 
@@ -368,5 +449,25 @@
         </div><!--end foot div-->
     </div><!-- end page div-->
     <a href="#" class="UpToTop"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Initialize Swiper -->
+  <script>
+          var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+  </script>
 </body>
 </html>

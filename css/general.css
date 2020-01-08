@@ -134,7 +134,7 @@ button.hamburger.toggle span::after {
     justify-content: center;
     align-items: center;
     width: auto;
-    height: 80px;
+    height: 40px;
     text-decoration: none;
     color: white;
     font-size: 2vw;
@@ -579,9 +579,8 @@ div#foot {
     border-radius: 50%;
     transform: scale(0);
     transition: .7s;
-
-
 }
+
 a.UpToTop::before {
     content: "";
     position: absolute;
