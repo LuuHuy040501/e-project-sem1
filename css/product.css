@@ -24,6 +24,7 @@
     width: 100%;
     height: auto;
     max-height: 100vh;
+    cursor: move;
 }
 /* responsive slide-container */
 .swiper-slide {

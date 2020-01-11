@@ -610,6 +610,7 @@ iframe {
     #products figure img {
         display: block;
         max-width: 100%;
+        height: auto;
         transition: .5s;
     }
     #products figure img:hover {
@@ -619,7 +620,7 @@ iframe {
     #products figure figcaption {
         text-align: center;
         color: #fff;
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
     .product-btn {
         padding: 10px 35px;
