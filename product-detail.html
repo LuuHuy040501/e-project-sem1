@@ -26,10 +26,9 @@
     <script src="js/showMenuOnScroll.js"></script>
     <script src="js/toggleMenu.js"></script>
     <script src="js/DropMenu.js"></script>
-    <script src="js/popupEffect.js"></script>
     <script src="js/ScrollToTop.js"></script>
 
-    <title>Products-detail</title>
+    <title>Products detail</title>
 </head>
 <body>
     <div id="page">
@@ -47,10 +46,10 @@
                             <span class='cheveron'></span>
                         </a>
                         <div class="subitem"> 
-                            <a href="product1.html" class="on">Product 1</a>
-                            <a href="product2.html">Product 2</a>
-                            <a href="product3.html">Product 3</a>
-                            <a href="product4.html">Product 4</a>
+                            <a href="Rice-and-rice-products.html" class="on">Rice and rice product </a>
+                            <a href="Oils.html">Oils</a>
+                            <a href="Fruit-Pulp.html">Fruit Pulp</a>
+                            <a href="Spices-and-Condiments.html">Spice and Condiments</a>
                         </div>
                     </div>
                     <a href="#">Gallery</a>
@@ -134,12 +133,111 @@
         </div><!--end head div-->
 
         <div id="content">
-            <div id="product-title">
-                <h2>Product Detail</h2>
+            <!-- title and page location-->
+            <div id="general-title">
+                <h2>Product detail</h2>
+                <div id="page-location">
+                    <a href="index.html" class="border-right">Home</a>
+                    <a href="Rice-and-rice-products.html" class="border-right">Rice and rice products</a>
+                    <a href="product-detail.html">Product detail</a>
+                </div>
             </div>
+            <!-- product detail-->
+            <div id="product-detail" class="container">
+                <!-- general details of the product-->
+                <div id="general-detail" class="row">
+                    <div class="col-md-6" id="product-image">
+                        <img src="images/organic milk.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 " id="general-info">
+                        <h2 id="pro-name">Lorem ipsum dolor sit.</h2>
+                        <span class="separator"></span>
+    
+                        <p id="status"><b>Avaibility:</b> In Stock</p>
+                        <p id ="Brand"><b>Brand</b>: Star Organic</p>
+                        <p id="pro-price">
+                            <label for="product-quantity"><b>Quantity:</b> </label>
+                            <input type="number" name="quantity" id="product-quantity" step=1 min=1 value="1">
+                            &dollar;<span id="money">3.34</span>
+                        </p>
+                        <a href="customer-cast.html" class="AddToCart mybtn" >Add to Cart <i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                </div><!-- end row for general detail-->
 
-           
-            
+                <div class="row" id="details-info">
+                    <div class="col-md-12 text-center">
+                        <h2>product details</h2>
+                        <span class="separator"></span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam possimus tempora commodi modi qui impedit rerum autem maiores excepturi reprehenderit blanditiis sed quis neque molestiae vel velit recusandae, voluptatem distinctio officiis, totam fugit earum a harum voluptatibus? Mollitia dignissimos autem sunt sequi, excepturi modi tenetur minus deserunt vel aut earum, similique explicabo reiciendis fugiat inventore provident voluptate incidunt nisi facilis, eveniet sed! Veniam assumenda magni quas nihil quibusdam dolores quo, ipsam dolorum ea rerum at, odit impedit? Ducimus quia error porro distinctio, doloremque facilis soluta rerum maxime, id, veniam ex quasi facere dolores. Libero molestiae, optio impedit unde odio assumenda.</p>
+                    </div>
+                </div><!-- /details-info-->
+                <!-- product usage-->
+                <div class="row" id="product-usage">
+                    <div class="col-md-12 text-center">
+                        <h2>Usage</h2>
+                        <span class="separator"></span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div><!-- /usage-->
+                <!--ingredients-->
+                <div id="product-ingredient" class="row">
+                    <div class="col-md-12 text-center">
+                        <h2> Ingredients</h2>
+                        <span class="separator"></span>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, reiciendis minus! Quos fugiat omnis autem amet unde quibusdam commodi ducimus!</p>
+                    </div>
+                </div><!--/ingredient-->
+            </div><!-- /product details-->
+            <div id="related-product" class="container">
+                <h2 class="text-center"> Related Products</h2>
+                <span class="separator"></span>
+                <div class="row" id="row1">
+                    <div class="product-card col-md-3 col-sm-6">
+                        <div class="product-img">
+                            <img src="images/organic milk.jpg" alt="" />
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
+                            <p class="product-price">&dollar; 3.34</p>
+                            <a href="product-detail.html" class="MoreInfo mybtn" target="_blank">More Info</a>
+                            <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="product-card col-md-3 col-sm-6">
+                        <div class="product-img">
+                            <img src="images/organic milk.jpg" alt="" />
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
+                            <p class="product-price">&dollar; 3.34</p>
+                            <a href="product-detail.html" class="MoreInfo mybtn" target="_blank">More Info</a>
+                            <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="product-card col-md-3 col-sm-6">
+                        <div class="product-img">
+                            <img src="images/organic milk.jpg" alt=""  />
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
+                            <p class="product-price">&dollar; 3.34</p>
+                            <a href="product-detail.html" class="MoreInfo mybtn" target="_blank">More Info</a>
+                            <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="product-card col-md-3 col-sm-6">
+                        <div class="product-img">
+                            <img src="images/organic milk.jpg" alt="" />
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Lorem ipsum dolor sit amet.</h3>
+                            <p class="product-price">&dollar; 3.34</p>
+                            <a href="product-detail.html" class="MoreInfo mybtn" target="_blank">More Info</a>
+                            <a href="customer-cast.html" class="AddToCart mybtn" target="_blank" ><i class="fas fa-shopping-cart"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                </div><!--end row 1-->
+            </div>
         </div><!--end content div-->
 
         <div id="foot" >

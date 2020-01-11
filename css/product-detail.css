@@ -5,13 +5,13 @@
     font-family: "Raleway", sans-serif;
 }
 
-/* product-title*/
-#product-title  {
+/* genneral-title*/
+#general-title{
     width: 100%;
     position: relative;
 }
 
-#product-title h2 {
+#general-title h2 {
     font-family: "Tangerine", sans-serif;
     color: #fff;
     font-size: 60px;
@@ -21,4 +21,127 @@
     width: 320px;
     height: 80px;
     margin-left: 100px;
+}
+/* general detail section */
+#product-detail {
+    width: 90vw;
+    margin-top: 100px;
+}
+
+#general-detail #product-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#product-image img {
+    transition: .5s;
+}
+
+#product-image img:hover {
+    transform: scale(1.2);
+}
+
+#general-info {
+    font-size: 1.5em;
+    padding: 5px 20px;
+}
+
+#general-info h2#pro-name {
+    font-family: "Tangerine";
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+    color: #d63031;
+}
+#general-info p {
+    margin: 20px 0;
+}
+
+#general-info #pro-price input#product-quantity {
+    width: 70px;
+    margin-right: 50px;
+    margin-left: 20px;
+    padding-left: 15px;
+}
+#pro-price #money {
+   font-family: Arial, Helvetica, sans-serif;
+   margin-left: 10px;
+    color: #d63031;
+}
+
+#general-info .AddToCart {
+    background-image: url(../images/btn-bg1.png);
+    background-size: 100% 100%;
+    font-size: 0.9em;
+    transition: .5s;
+}
+
+.AddToCart > i {
+    transition: .5s;
+    margin-left: 10px;
+}
+.AddToCart:hover > i {
+    transform: rotate(20deg);
+}
+
+/*  details-ìno section*/
+#details-info {
+    margin-top: 50px;
+    font-size: 1.3em;
+    padding: 5px 20px;
+}
+
+#details-info h2 {
+    font-family: "Tangerine";
+    font-size: 5em;
+    color: #d63031;
+    letter-spacing: 1.2px;
+}
+
+/* usage section */
+#product-usage {
+    margin-top: 50px;
+    font-size: 1.5em;
+}
+#product-usage h2 {
+    font-family: "Tangerine";
+    font-size: 5em;
+    color: #d63031;
+    letter-spacing: 1.2px;
+}
+#product-usage p {
+    font-weight: bold;
+}
+
+/* ingredients section */
+#product-ingredient {
+    margin-top: 50px;
+    font-size: 1.5em;
+    padding: 5px 20px;
+}
+
+#product-ingredient h2 {
+    font-family: "Tangerine";
+    font-size: 5em;
+    color: #d63031;
+    letter-spacing: 1.2px;
+}
+
+/* related product section */
+#related-product {
+    margin-top: 100px;
+    width: 90vw;
+}
+
+#related-product h2 {
+    font-family: "Tangerine";
+    font-size: 5em;
+    color: #d63031;
+    letter-spacing: 1.2px;
+}
+
+#related-product .product-img img {
+    cursor: auto;
 }
