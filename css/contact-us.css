@@ -84,6 +84,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     font-size: 16px;
+    overflow: hidden;
     border: 2px solid;
     background-color: #8fbe26;
     color: #fff;
