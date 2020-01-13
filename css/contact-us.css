@@ -74,6 +74,9 @@ input[type="submit"] {
 
 .submit-button.color {
     text-transform: uppercase;
+    box-shadow: 1px 2px 1px 1px rgba(0, 0,0, .7);
+    overflow: hidden;
+    letter-spacing: 2px;
     color: #fff;
     background-color: #a6ce37;
     border-color: #a6ce37;
