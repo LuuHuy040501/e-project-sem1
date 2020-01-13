@@ -95,8 +95,13 @@ h2{
 
 .comment{
   font-family: cursive palatino;
-  font-size: 14;
+  font-size: 10;
   color: white;
   text-align: center;
   margin: 12px auto 10px auto;
+}
+#competition{
+  color: white;
+  size: 22;
+  text-align: center;
 }
