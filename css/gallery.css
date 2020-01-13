@@ -41,7 +41,7 @@ justify-content: center;
 margin: 40px auto 40px auto;
 padding: 40px;}
 
-.intro{
+.introp{
   position: relative;
 }
 
@@ -86,7 +86,7 @@ padding: 40px;}
 
 h2{
 
-  font-family: cursive palatino;
+    font-family: "Raleway", sans-serif;
   font-size: 18;
   color: white;
   text-align: center;
@@ -94,7 +94,7 @@ h2{
 }
 
 .comment{
-  font-family: cursive palatino;
+    font-family: "Raleway", sans-serif;
   font-size: 10;
   color: white;
   text-align: center;
