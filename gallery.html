@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- jquery cdn-->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- way point plugin-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <!-- count up plugin (fixed bug decrease counting number when scroll to counting section agqain)-->
+    <script src="vendor/counter up/jquery.counterup.js"></script>
+    <!-- swiper.js-->
+    <script src="vendor/swiper/swiper.min.js"></script>
     <!-- import fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <!-- Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- font awesome-->
     <link rel="stylesheet" href="vendor/fontawesome/css/all.css">
+    <!-- swiper-->
+    <link rel="stylesheet" href="vendor/swiper/swiper.min.css">
     <!--customer stylesheet-->
     <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/gallery.css">
-
 
     <!-- customer javascript-->
     <script src="js/showMenuOnScroll.js"></script>
     <script src="js/toggleMenu.js"></script>
-    <script src="js/popupEffect.js"></script>
-    <title>Products</title>
+    <script src="js/DropMenu.js"></script>
+    <script src="js/ScrollToTop.js"></script>
+
+    <title>Gallery</title>
 </head>
+
 <body>
     <div id="page">
         <div id="head">
@@ -35,10 +47,20 @@
                 </button>
 
                 <div id="menu">
-                    <a href="index.html"> Home</a>
-                    <a href="product.html" class="on">Product</a>
-                    <a href="#">Gallery</a>
-                    <a href="#">Contact Us</a>
+                    <a href="index.html" >Home</a>
+                    <div class="dropdown-item">
+                        <a href="#" id="drop"> Products
+                            <span class='cheveron'></span>
+                        </a>
+                        <div class="subitem">
+                            <a href="Rice-and-rice-products.html">Rice and rice product</a>
+                            <a href="Oils.html">Oils</a>
+                            <a href="Fruit-Pulp.html">Fruit Pulp</a>
+                            <a href="Spices-and-Condiments.html">Spice and Condiments</a>
+                        </div>
+                    </div>
+                    <a href="gallery.html" class="on">Gallery</a>
+                    <a href="contact-us.html">Contact Us</a>
                 </div>
 
                 <div id="search-box">
@@ -53,166 +75,149 @@
             </div><!-- end nav-->
 
             <div id="banner">
-                <p class="welcome">Welcome to our Star Organic farm</p>
-                <h1 class="intro">Come and take a look it shall not harm</h1>
-                <p class="slogan">Good health Good Life</p>
+                <p class="welcome">Welcome to Star Organic farm</p>
+                <img src="images/logo.png" alt="star-logo" id="logo-img">
+                <h1 class="intro">Lorem ipsum dolor sit amet consectetur</h1>
+                <p class="slogan">Lorem ipsum dolor sit amet</p>
             </div> <!-- end banner-->
-        </div><!--end head div-->
-
-        <div id="content"><!--Foundation-->
-          <div id="gallery-container" class="container-fluid">
-            <div class="row" >
-              <figure class="col-md-6">
-                <div class="intro-text">
-                  <h3>Foundation</h3>
-                  <p>  Founded in 2009 by green couple Soeparwan Soeleman and Donor Rahayu. The inspiration was derived from the desire to live in a healthy lifestyle at all aspects. It is including but not limited to physical health, mental, social. As both of them did not have any agriculture background, they started by exploring the knowledge of organic in depth from credible sources such as the research journal of universities, leading organic institutions, research centers etc. </p>
-                </div>
-                  <div  class="introp">
-                      <a href="#"><img src="images/found.jpg" alt=""  width=600 height=400></a>
-                  </div>
-              </figure>
-
-              <figure class="col-md-6">
-                <div class="intro-text">
-                  <h3>Development</h3>
-                  <p>In 2013, FAM Organic was officially accepted as the member of IFOAM, International Federation of Organic Agriculture Movements based in Germany. IFOAM is one of the biggest organic organization in the world who strong influences for the development of organic. </p>
-                </div>
-                  <div  class="introp">
-                      <a href="#"><img src="images/found2.jpeg" alt="" width=600 height=400></a>
-                  </div>
-              </figure>
+        </div> <!--end head div-->
+    
+        <div id="content">
+            <div id="page-title">
+                <h2>Our Happy Farm</h2>
+                <span class="separator"></span>
             </div>
-          </div><!-- end Foundation-->
-
-          <div id="gallery" class ="container-fluid"> <!-- competition pics-->
-              <div id="gallery-text">
-                  <span class="separator"></span>
-              </div>
-              <div id="competition">
-                <p>tbhdrvkjeckmejncrtbjrvhncvrbnjdc</p>
-              </div>
-              <div id="gallery-text">
-                  <span class="separator"></span>
-              </div>
-              <div class="gallery-desktop">
-                  <div class="row">
-                      <div class="box col-md-3 col-sm-3">
-                          <div class="imgBox">
-                              <img src="images/pumpkin.jpg" alt="" class="img-responsive" height="150px">
-                          </div>
-                      </div>
-
-                      <div class="box col-md-3 col-sm-3">
-                          <div class="imgBox">
-                              <img src="images/melon.jpg" alt="" class="img-responsive" height="150px">
-                          </div>
-                      </div>
-
-                      <div class="box col-md-3 col-sm-3">
-                          <div class="imgBox">
-                              <img src="images/contest.jpg" alt="" class="img-responsive" height="150px">
-                          </div>
-                      </div>
-                      <div class="box col-md-3 col-sm-3">
-                          <div class="imgBox">
-                              <img src="images/animal.jpg" alt="" class="img-responsive" height="150px">
-                          </div>
-                      </div>
-                  </div> <!-- end row 1-->
-                  <div id="gallery-text">
-                      <span class="separator"></span>
-                  </div>
-                  <div id="competition">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  </div>
-                  <div id="gallery-text">
-                      <span class="separator"></span>
-                  </div>
-                  <div class="gallery-desktop">
-                      <div class="row">
-                          <div class="box col-md-3 col-sm-3">
-                              <div class="imgBox">
-                                  <img src="images/image1.jpg" alt="" class="img-responsive">
-                              </div>
-                          </div>
-
-                          <div class="box col-md-3 col-sm-3">
-                              <div class="imgBox">
-                                  <img src="images/product1.jpg" alt="" class="img-responsive">
-                              </div>
-                          </div>
-
-                          <div class="box col-md-3 col-sm-3">
-                              <div class="imgBox">
-                                  <img src="images/product1.jpg" alt="" class="img-responsive">
-                              </div>
-                          </div>
-                          <div class="box col-md-3 col-sm-3">
-                              <div class="imgBox">
-                                  <img src="images/product1.jpg" alt="" class="img-responsive">
-                              </div>
-                          </div>
-                      </div> <!-- end row 2-->
-                      <div id="gallery-text">
-                          <span class="separator"></span>
-                      </div>
-                      <div id="competition" id="count">
-                        <p><h1>YOU CAN ALWAYS COUNT ON US </h1></p>
-                      </div>
-                      <div id="gallery-text">
-                          <span class="separator"></span>
-                      </div>
-              </div>
-        </div> <!--end middle pic--><!--end competition pics-->
-
-
-        <div id="types" class="container-fluid">
-        <div id="pic">
-          <div class="col-md-3" class="kind">
-            <div id="text1" class="box">
-              <h2><i>HEALTHIER</i></h2>
-              <p class="comment">Lorem ipsum dolor sit amet</p>
+            <div id="page-location">
+                <a href="index.html" class="border-right">Home</a>
+                <a href="gallery.html">Gallery</a>
             </div>
-            <img src="images/veg1.jpg" alt="" height="600" width="300">
-          </div>
-          <div class="col-md-3" class="kind">
-            <div id="text2" class="box">
-              <h2><i>FRESHER</i></h2>
-              <p class="comment">Lorem ipsum dolor sit amet</p>
-            </div>
-            <img src="images/blue1.jpg" alt="" height="600" width="300">
-          </div>
-          <div class="col-md-3" class="kind">
-            <div id="text3" class="box">
-              <h2><i>PURE</i></h2>
-              <p class="comment">Lorem ipsum dolor sit amet</p>
-            </div>
-            <img src="images/grape.jpg" alt="" height="600" width="300">
-          </div>
-          <div class="col-md-3" class="kind">
-            <div id="text4" class="box">
-              <h2><i>FERTILIZER-FREE</i></h2>
-              <p class="comment">Lorem ipsum dolor sit amet</p>
-            </div>
-            <img src="images/red.jpg" alt="" height="600" width="300">
-          </div>
+            <!-- gallery-->
+            <div class="container" id="gallery-container">
+                <div class="row">
+                    <div class="img-box col-md-3">
+                        <div class="img-container">
+                            <img src="images/gallery1.jpg" alt="gallery1">
+                        </div>
+                        <div class="caption">
+                            <p>Say Cheeseeeee :)))).</p>
+                        </div>
+                    </div>
+                    <div class="img-box col-md-3">
+                        <div class="img-container">
+                            <img src="images/gallery2.jpg" alt="gallery2">
+                        </div>
+                        <div class="caption">
+                            <p>Fresh vegetables for good health.</p>
+                        </div>
+                    </div>
+                    <div class="img-box col-md-3">
+                        <div class="img-container">
+                            <img src="images/gallery3.jpg" alt="gallery3">
+                        </div>
+                        <div class="caption">
+                            <p>Want some fresh milk ?</p>
+                        </div>
+                    </div>
+                    <div class="img-box col-md-3">
+                        <div class="img-container">
+                            <img src="images/image6.jpg" alt="gallery4">
+                        </div>
+                        <div class="caption">
+                            <p>I'm looking at youuuu !!!.</p>
+                        </div>
+                    </div>
+                </div><!-- end row 1-->
 
-        </div>
-        </div>
-        <!--end types -->
+                <div class="row">
+                    <div class="img-box col-md-3">
+                        <div class="img-container">
+                            <img src="images/image7.jpg" alt="gallery5">
+                        </div>
+                        <div class="caption">
+                            <p>Fresh fruits.</p>
+                        </div>
+                    </div>
+                    <div class="img-box col-md-3">
+                        <div class="img-container">
+                            <img src="images/gallery4.jpg" alt="gallery6">
+                        </div>
+                        <div class="caption">
+                            <p>Happy farmers make a happy farm.</p>
+                        </div>
+                    </div>
+                    <div class="img-box col-md-3">
+                        <div class="img-container">
+                            <img src="images/blue1.jpg" alt="gallery7">
+                        </div>
+                        <div class="caption">
+                            <p>Yummyy !!!.</p>
+                        </div>
+                    </div>
+                    <div class="img-box col-md-3">
+                        <div class="img-container">
+                            <img src="images/fer.jpg" alt="gallery8">
+                        </div>
+                        <div class="caption">
+                            <p>Litle things make big happiness.</p>
+                        </div>
+                    </div>
+                </div><!-- end row 2-->
 
-        <div id="foot" >
-            <div id="copyrights" >
+                <div class="row">
+                    <div class="img-box col-md-3">
+                        <div class="img-container">
+                            <img src="images/image4.jpg" alt="gallery9">
+                        </div>
+                        <div class="caption">
+                            <p>I'am a handsome chicken  </p>
+                        </div>
+                    </div>
+                    <div class="img-box col-md-3">
+                        <div class="img-container">
+                            <img src="images/Red.jpg" alt="gallery10">
+                        </div>
+                        <div class="caption">
+                            <p>Clean and healthy fruits</p>
+                        </div>
+                    </div>
+                    <div class="img-box col-md-3">
+                        <div class="img-container">
+                            <img src="images/Rice.jpg" alt="gallery11">
+                        </div>
+                        <div class="caption">
+                            <p>Clean rice.</p>
+                        </div>
+                    </div>
+                    <div class="img-box col-md-3">
+                        <div class="img-container">
+                            <img src="images/image5.jpg" alt="gallery12">
+                        </div>
+                        <div class="caption">
+                            <p>Our peaceful farm</p>
+                        </div>
+                    </div>
+                </div><!-- end row 3-->
+
+            </div><!-- /gallery container-->
+        </div> <!--end content div-->
+        
+        <div id="foot">
+            <div id="copyrights">
                 Copyright &copy 2019. All rights reserved by Pink Panther Team
             </div>
-            <div id="social-media" >
-                <a href="#" ><i class="fab fa-facebook"></i></a>
+            <div id="social-media">
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
                 <a href="#"><i class="fas fa-envelope"></i></a>
             </div>
-        </div><!--end foot div-->
-      </div><!-- end page div-->
-      </body>
-      </html>
+        </div>
+
+    </div><!-- end page div-->
+
+
+    <!-- up to top button-->
+    <a href="#" class="UpToTop"><i class="fas fa-arrow-up"></i></a>
+</body>
+</html>
