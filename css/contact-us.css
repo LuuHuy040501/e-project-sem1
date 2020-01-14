@@ -118,8 +118,35 @@ button[type="submit"] {
     display: block;
     margin: 70px 0;
     width: 100%;
+<<<<<<< HEAD
     outline: none;
     height: 40px;
+=======
+    font-size: 16px;
+    font-weight: 100%;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1.5px solid #eee;
+}
+
+/* button style */
+input[type="submit"] {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+    padding: 13px 30px;
+    border-radius: 5px;
+    border: 2px solid;
+    background: transparent;
+}
+
+.submit-button.color {
+    text-transform: uppercase;
+    box-shadow: 1px 2px 1px 1px rgba(0, 0,0, .7);
+    overflow: hidden;
+    letter-spacing: 2px;
+>>>>>>> a8e505926f354bf858c126cacc14a225e88beb37
     color: #fff;
     font-size: 1.5em;
     text-transform: uppercase;
@@ -135,6 +162,7 @@ button[type="submit"]:hover {
     transform: translateY(-8px);
 }
 
+<<<<<<< HEAD
 /* location section for mobile */
 #location {
     width: 100%;
@@ -250,3 +278,13 @@ iframe {
     }
 
 }
+=======
+input[type="submit"]:hover {
+    font-size: 16px;
+    overflow: hidden;
+    border: 2px solid;
+    background-color: #8fbe26;
+    color: #fff;
+    cursor: pointer;
+}
+>>>>>>> a8e505926f354bf858c126cacc14a225e88beb37
