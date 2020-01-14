@@ -4,85 +4,249 @@
     font-family: "Raleway", sans-serif;
 }
 
-/* Style title page */
-h3 {
+#page-title {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
     font-family: "Tangerine", sans-serif;
-    font-size: 5em;
-    color: #e15f41;
+    color: red;
 }
 
-.separator {
-    width: 200px;
-    height: 1px;
-    display: block;
+#page-title h2{
+    font-size: 60px;
+}
+
+#page-location {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 50px;
+}
+
+#page-location a {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 1.2em;
+    color: black;
+    text-decoration: none;
+}
+#page-location a:hover {
+    color: green;
+}
+.border-right {
+    border-right: 1px solid #efefef;
+}
+
+/* style the form */
+#contact-form {
+    width: 90vw;
+}
+
+.input-container {
     position: relative;
-    margin: 60px auto 60px auto;
-    background-color: #e7e7e7;
 }
-
-.separator::before {
-    content: '';
-    width: 5px;
-    height: 5px;
-    border-radius: 3px;
+.input-container .input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 50px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(0, 0, 0, .5);
+    position: relative;
+    outline: none;
+    font-size: 1.5em;
+    padding: 0 10px;
+}
+.input-container .text {
+    display: block;
     position: absolute;
-    top: -2px;
-    background-color: #cc9a50;
-    border-radius: 2px;
-    left: 100px;
+    top: 0;
+    line-height: 40px;
+    opacity: .5;
+    font-size: 1.2em;
+    pointer-events: none;
+    transition: .5s;
+    margin: 0;
+    padding: 0;
 }
 
-/* Title in text filling */
-label {
-    font-size: 18px;
-    font-weight: 500;
-    margin: 20px 0 0px;
-}
-
-/* Text filling style */
-#contact-form input[type="text"], #contact-form input[type="email"] {
-    font-size: 16px;
-    font-weight: 100%;
+#comment {
+    display: block;
     width: 100%;
-    margin: 10px 0;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: 1.5px solid #eee;
+    height: 100px;
+    position: relative;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(0, 0, 0, .5);
+    font-size: 1.5em;
+    padding: 0 10px;
+    margin-top: 50px;
+}
+.comment-text {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    font-size: 1.2em;
+    opacity: .5;
+    line-height: 100px;
+    pointer-events: none;
+    transition: .5s;
+}
+/* focus effect */
+
+.input:focus + .text,
+.input:valid + .text {
+    transform: translateY(-25px);
+    color: #1B9CFC;
+    font-weight: 700;
+    font-size: 1em;
+    opacity: 1;
 }
 
-textarea {
-    height: 250px;
+#comment:focus + .comment-text,
+#comment:valid + .comment-text {
+    transform: translateY(-60px);
+    color: #1B9CFC;
+    font-weight: 700;
+    font-size: 1em;
+    opacity: 1;
+}
+
+/* submit button */
+button[type="submit"] {
+    display: block;
+    margin: 70px 0;
     width: 100%;
-    font-size: 16px;
-    font-weight: 100%;
-    margin: 10px 0;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: 1.5px solid #eee;
-}
-
-/* button style */
-input[type="submit"] {
-    font-size: 16px;
-    font-weight: 600;
-    margin: 10px 0;
-    padding: 13px 30px;
-    border-radius: 5px;
-    border: 2px solid #cdaa5e;
-    background: transparent;
-}
-
-.submit-button.color {
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 1.5em;
     text-transform: uppercase;
-    color: #fff;
-    background-color: #a6ce37;
-    border-color: #a6ce37;
+    border: none;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, .4);
+    background-color: #1B9CFC;
+    position: relative;
+    transition:  .5s;
+
+}
+button[type="submit"]:hover {
+    background-color: #F97F51;
+    transform: translateY(-8px);
 }
 
-input[type="submit"]:hover {
-    font-size: 16px;
-    border: 2px solid #cdaa5e;
-    background-color: #8fbe26;
-    color: #fff;
-    cursor: pointer;
+/* location section for mobile */
+#location {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+iframe {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+#location-info {
+    width: 100%;
+    height: auto;
+    margin-bottom: 70px;
+}
+
+.location-detail {
+    text-align: left;
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 25px;
+
+}
+
+.location-detail i.fas {
+    font-size: 40px;
+    position: relative;
+    display: block;
+    color: green;
+}
+.location-detail p {
+    position: absolute;
+    top: 20px;
+    left: 120px;
+}
+.location-detail p > span {
+    font-family: "Raleway";
+    color: #111;
+    font-size: 1.3em;
+}
+.location-detail p>b {
+    color: green;
+    font-size: 1.2em;
+    letter-spacing: 1.5px;
+}
+/* location section for desktop */
+@media only screen and (min-width: 992px) {
+    #location-info {
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .location-detail {
+        position: relative;
+    }
+    .location-detail i.fas{
+        color: grey;
+    }
+    .location-detail:hover i.fas {
+        color:  green;
+    }
+    .location-detail p {
+        overflow: hidden;
+        font-size: 1em;
+    }
+    .location-detail p>b {
+        font-size: 1.1em;
+        letter-spacing: 1.5px;
+    }
+    /* add hover effect */
+    .location-detail p::before {
+        content: "";
+        position: absolute;
+        top: 25px;
+        left: -100%;
+        width: 60px;
+        height: 2px;
+        background-color: green;
+        transition: .5s;
+    }
+
+    .location-detail:hover p::before {
+        left: 0;
+    }
+}
+
+/* style the error msg */
+.msg {
+    position: absolute;
+    bottom: -25px;
+    color: red;
+    font-size: 1.2em;
+}
+
+.tip {
+    position: absolute;
+    bottom: -25px;
+    color: green;
+    font-size: 1.2em;
+}
+@media only screen and (min-width: 992px) {
+    .msg {
+        bottom: 0;
+    }
+
+    .tip {
+        bottom: 0;
+    }
+
 }
