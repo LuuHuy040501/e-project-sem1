@@ -40,15 +40,16 @@ function quantityChanged(event) {
 }
 
 /* purchase button clicked */
-function purchaseButtonClicked() {
+function purchaseButtonClicked(e) {
     var cartItem = document.getElementsByClassName('cart-items')[0];
     var inCartItem = cartItem.getElementsByClassName('cart-row');
     var numberProductInCart = inCartItem.length;
     console.log(numberProductInCart);
     if (numberProductInCart == 0) {
+        e.preventDefault();
         alert('CAN NOT PURCHASE!!! you dont have any product in cart, add product to your cart first !!!');
     } else {
-    alert('Purchased completed thanks for using our service !');
+    alert('follow 2 steps more to purchase your order!');
     }
 }
 

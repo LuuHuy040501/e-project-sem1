@@ -245,8 +245,6 @@
     color: #fff;
     text-decoration: none;
 }
-
-
 /*** popup efect ***/
 
 #product-container.active {
@@ -261,13 +259,14 @@
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80vw;
+    width: 40vw;
     padding: 50px;
     box-shadow: 0 5px 30px rgba(0, 0, 0, .3);
     background-color: #fff;
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
+    text-align: center;
 }
 
 .popup .AddToCart {
@@ -286,6 +285,11 @@
     visibility: visible;
     opacity: 1;
     transition: .5s;
+}
+.popup img {
+    display: block;
+    margin: 25px auto;
+    width: 200px;
 }
 
 /* style cart section */
@@ -319,7 +323,7 @@
     width: 70%;
     max-width: 200px;
     height: auto;
- 
+   
 }
 .cart-row .item-img span.item-name {
     display: inline-block;
@@ -391,8 +395,13 @@
 }
 .purchase-btn:hover {
     transform: scale(1.2);
+    color: #fff;
+    text-decoration: none;
 }
-
+.purchase-btn:link, .purchase-btn:visited {
+    color: #fff;
+    text-decoration: none;
+}
 /* scroll to cart button */
 .scrollToCart {
     position: fixed;
@@ -420,6 +429,14 @@
     transform: rotate(25deg);
     text-decoration: none;
     color: #fff;
+}
+
+.scrollToCart:hover {
+    text-emphasis: none;
+}
+
+.scrollToCart:link, .scrollToCart:visited {
+    text-emphasis: none;
 }
 
 .scrollToCart.added i {
@@ -457,10 +474,5 @@
     .product-details .AddToCart:hover i {
         transform: rotate(30deg);
     }
-    .popup {
-        width: 600px;
-    }
-    .popup .AddToCart:hover i {
-        transform: rotate(30deg);
-    }
+
 }

@@ -106,19 +106,15 @@ function cartButtonAnimate() {
     }
 }
 /* purchase button clicked */
-function purchaseButtonClicked() {
+function purchaseButtonClicked(event) {
     var cartItemsEl = document.getElementsByClassName('cart-items')[0];
     var numberItemIncart = cartItemsEl.getElementsByClassName('cart-row').length;
     if(numberItemIncart == 0) {
+        event.preventDefault();
         alert('Can not Purchase, You need to add some products to cart first !');
-    } else {
-        alert('Purchased completed thanks for using our service !');
-        /* remove all cart items after purchased succes */
-        var cartItem = document.getElementsByClassName('cart-items')[0];
-        while (cartItem.hasChildNodes() ) {
-            cartItem.removeChild(cartItem.firstChild);
-        }
-        updateTotal();
+    } 
+    else {
+        alert('follow 2 steps more to purchase your order')
     }
 }
 /* update toltal */
